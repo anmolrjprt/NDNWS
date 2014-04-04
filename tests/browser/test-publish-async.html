@@ -1,0 +1,72 @@
+<?xml version = "1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"DTD/xhtml1-strict.dtd">
+<!--
+  See COPYING for copyright and distribution information.
+-->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+
+
+<head>
+  <title>NDN Put via WebSocket</title>
+
+  <script type="text/javascript" src="../../build/ndn.js"></script>
+
+  <script type="text/javascript">
+    var face = new Face({host: "localhost"});
+
+    function onInterest(prefix, interest, transport)
+    {
+      console.log("onInterest called.");
+      var contentString = document.getElementById('content').value;
+
+      var data = new Data(interest.name, new SignedInfo(), new Buffer(contentString));
+      data.signedInfo.setFields();
+      data.sign();
+      var encodedData = data.wireEncode();
+      
+      try {
+        console.log("Send content " + contentString);
+        transport.send(encodedData.buf());
+      } catch (e) {
+        console.log(e.toString());
+      }
+    }
+
+    function onRegisterFailed(prefix) 
+    {
+      console.log("Register failed for prefix " + prefix.toUri());
+    }
+
+    function run() {
+      var contentName = document.getElementById('contentname').value;
+
+      face.registerPrefix(new Name(contentName), onInterest, onRegisterFailed);
+
+      document.getElementById('result').innerHTML = 'Content name \'' + contentName +'\' published.';
+    }
+
+    </script>
+
+</head>
+<body >
+  <form>
+  <div>
+    <p>Please Enter a Content Name:</p>
+
+    <input id="contentname" type="text" size="50" name="CONTENTNAME" value="/regtest001" />
+    <p>Please Enter the Content:</p>
+    <textarea id="content" cols="40" rows="5" name="CONTENT" >This works!</textarea>
+
+    <br />
+    </div>
+  </form>
+  <div>
+    <button id="testBtn" onclick="run()">Publish Content</button>
+  </div>
+
+  <p id="result"></p>
+
+</body>
+</html>

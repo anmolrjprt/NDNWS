@@ -1,0 +1,13 @@
+# project ndnjs (0.1) configured on Mon Mar 24 13:41:43 2014 by
+# waf 1.7.9 (abi 98, python 20702f0 on darwin)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/Users/admin/Desktop/ndn-js
+----------------------------------------
+Setting out to
+/Users/admin/Desktop/ndn-js/build
+----------------------------------------
+Checking for closure-compiler
+not found

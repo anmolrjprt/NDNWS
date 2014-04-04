@@ -1,0 +1,8 @@
+argv = ['./waf', 'configure']
+environ = {'TERM_SESSION_ID': 'ABB5370A-DCEE-447E-8F75-2F1D740C00AE', 'SSH_AUTH_SOCK': '/tmp/launch-LgGjFR/Listeners', 'VERSIONER_PYTHON_PREFER_32_BIT': 'no', 'TERM_PROGRAM_VERSION': '309', 'SHELL': '/bin/bash', 'LOGNAME': 'admin', 'USER': 'admin', 'HOME': '/Users/admin', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/ndn/bin:/usr/local/ndn/sbin:/usr/local/ndn/bin:/usr/local/ndn/sbin:/usr/local/ndn/bin:/usr/local/ndn/sbin:/usr/local/ndn/bin:/usr/local/ndn/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin', 'DISPLAY': '/tmp/launch-DnFm3O/org.macosforge.xquartz:0', 'TMPDIR': '/var/folders/ds/h6dvmnh56lb21xf__g7j4lfr0000gn/T/', 'TERM_PROGRAM': 'Apple_Terminal', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-VbrzgQ/Render', 'VERSIONER_PYTHON_VERSION': '2.7', 'SHLVL': '1', 'OLDPWD': '/Users/admin', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'Apple_Ubiquity_Message': '/tmp/launch-no0gMl/Apple_Ubiquity_Message', 'PWD': '/Users/admin/Desktop/ndn-js', '_': './waf', 'COMMAND_MODE': 'unix2003'}
+files = ['/Users/admin/Desktop/ndn-js/wscript']
+hash = -1634918752651697478
+options = {'files': '', 'yui': False, 'jobs': 4, 'verbose': 0, 'nocache': False, 'progress_bar': 0, 'distcheck_args': None, 'top': '', 'destdir': '', 'js': True, 'zones': '', 'prefix': '/usr/local/', 'ws': True, 'jsdir': None, 'download': False, 'force': False, 'keep': 0, 'out': '', 'targets': '', 'compiler': True}
+out_dir = '/Users/admin/Desktop/ndn-js/build'
+run_dir = '/Users/admin/Desktop/ndn-js'
+top_dir = '/Users/admin/Desktop/ndn-js'

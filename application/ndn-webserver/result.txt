@@ -1,0 +1,125 @@
+Started.....
+
+
+Interest received : /webdir/test1.html
+Requested File Name along-with path: webdir/test1.html
+Total NDN Packets: 28
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00 Segment number1
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%01 Segment number2
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%02 Segment number3
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%03 Segment number4
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%04 Segment number5
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%05 Segment number6
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%06 Segment number7
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%07 Segment number8
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%08 Segment number9
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%09 Segment number10
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%0A Segment number11
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%0B Segment number12
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%0C Segment number13
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%0D Segment number14
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%0E Segment number15
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%0F Segment number16
+Buffer Length: 0
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%10 Segment number17
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%11 Segment number18
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%12 Segment number19
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%13 Segment number20
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%14 Segment number21
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%15 Segment number22
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%16 Segment number23
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%17 Segment number24
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%18 Segment number25
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%19 Segment number26
+Buffer Length: 4096
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%1A Segment number27
+Buffer Length: 3285
+Interest served: /webdir/test1.html/%FD-%E4S%BB/%00%1B Segment number28
+
+
+Interest received : /webdir/test2.html
+Requested File Name along-with path: webdir/test2.html
+Total NDN Packets: 28
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00 Segment number1
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%01 Segment number2
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%02 Segment number3
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%03 Segment number4
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%04 Segment number5
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%05 Segment number6
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%06 Segment number7
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%07 Segment number8
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%08 Segment number9
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%09 Segment number10
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%0A Segment number11
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%0B Segment number12
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%0C Segment number13
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%0D Segment number14
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%0E Segment number15
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%0F Segment number16
+Buffer Length: 0
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%10 Segment number17
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%11 Segment number18
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%12 Segment number19
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%13 Segment number20
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%14 Segment number21
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%15 Segment number22
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%16 Segment number23
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%17 Segment number24
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%18 Segment number25
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%19 Segment number26
+Buffer Length: 4096
+Interest served: /webdir/test2.html/%FD-%E57j/%00%1A Segment number27
+Buffer Length: 2955
+Interest served: /webdir/test2.html/%FD-%E57j/%00%1B Segment number28

@@ -1,0 +1,117 @@
+Interim changes since NDN-JS v0.3 (2014-03-19)
+----------------------------------------------
+
+Changes
+* In Node, by default connect on port 6363 to a random testbed hub.
+* In the Firefox add-on, by default connect on port 6363 to a random testbed hub.
+
+Bug fixes
+* http://redmine.named-data.net/issues/1336 Make Interest.getMustBeFresh() return default true. 
+* http://redmine.named-data.net/issues/1339 Fix FinalBlockID TLV encoding.
+* For TLV packets over UDP, ignore packets starting with 0x80.
+* Fix bug for signing old format Binary XML data packets (after adding TLV code).
+
+NDN-JS v0.3 (2014-02-27)
+------------------------
+
+This release uses NDN-TLV for the default wire format.
+
+Changes
+* You should use get/setKeyLocator in the Signature object instead of locator in the Data signedInfo.
+* Added get/setKeyLocator in the Signature object.
+* http://redmine.named-data.net/issues/1073 In Face.expressInterest, support onData and onTimeout callbacks.
+* http://redmine.named-data.net/issues/1087 In Name.getPrefix, support a negative argument, e.g. getPrefix(-1).
+* In Face.registerPrefix, add support for onInterest and onRegisterFailed callbacks and ForwardingFlags.
+* http://redmine.named-data.net/issues/1084 Internal: Binary XML decoding speed up to only support DTags.
+* http://redmine.named-data.net/issues/1121 In Name.get, allow a negative index.
+* In Name, added method getSubName.
+* Added utility classes Blob and SignedBlob.
+* In WireFormat, added getDefaultWireFormat and setDefaultWireFormat.
+* In Data, added wireEncode (which returns a SignedBlob) and wireDecode.
+* In Interest, added  wireEncode (which returns a Blob) and wireDecode.
+* Added class MetaInfo and deprecated SignedInfo.
+* Moved classes Exclude, Signature, MetaInfo and KeyLocator into their own source files.
+* In Interest, added get/setKeyLocator.
+* In Interest, added get/setMustBeFresh.
+* In KeyLocatorType, added KEY_LOCATOR_DIGEST.
+* In MetaInfo (formerly SignedInfo) setFields, set a KeyLocatorType.KEY_LOCATOR_DIGEST instead of a KEY.
+* In EncodingUtils.decodeHexData, etc., added an optional wireFormat argument.
+
+Deprecated
+* SignedInfo (MetaInfo): Deprecated the locator. You should use get/setKeyLocator in the Signature object.
+* Interest: Deprecated getAnswerOriginKind.  Use getMustBeFresh.
+* Interest: Deprecated setAnswerOriginKind.  Use setMustBeFresh.
+* Interest: Deprecated getPublicKeyLocator.  If the interest has a public key locator, its keyLocator has
+  type KeyLocatorType.KEY_LOCATOR_DIGEST and the key data has the digest.
+* SignedInfo: Deprecated class SignedInfo. Use MetaInfo.
+* Face/NDN: Deprecated expressInterest(name, closure [, template]). You should use 
+  expressInterest which uses callbacks, not Closure.
+* Face/NDN: Deprecated registerPrefix(name, closure [, intFlags]). You should use 
+  registerPrefix which uses callbacks, not Closure.
+* Data: Deprecated encode and decode.  You should use wireEncode (which returns a SignedBlob) and wireDecode.
+* Interest: Deprecated encode and decode.  You should use wireEncode (which returns a Blob) and wireDecode.
+
+Bug fixes
+* http://redmine.named-data.net/issues/1303 Call all callbacks where the interest matches the incoming data packet.
+
+Documentation
+* wsproxy: In the README, document option -n for the remote ndnd port.
+
+NDN-JS v0.2 (2013-11-08)
+------------------------
+
+Changes
+* http://redmine.named-data.net/issues/1060 Rename the combined files ndn-js.js and ndn-js.min.js to ndn.js and ndn.min.js.
+* http://redmine.named-data.net/issues/1048 Add support for Node.js to merge with NDN-On-Node.
+* http://redmine.named-data.net/issues/1071 Renamed the main NDN class to Face.
+* Updated the main Face object to use a TcpTransport by default for Node.js.
+* Change all code to use new Buffer instead of new Uint8Array.
+* Moved global LOG variable to file Log.js.  If you want to change the log level, change Log.LOG .
+* http://redmine.named-data.net/issues/1051 If a host is specified, the Face constructor defaults to port 6363 instead of port 9695.
+* Added Name.Component class and changed Name to use it. Name.getComponent still returns the component value but is deprecated.
+* Added Name.get which returns a Name.Component (not the component byte array).
+* Added Name.size. Deprecated Name.getComponentCount.
+* Change Exclude to hold Name.Component instead of Buffer. The Exclude constructor accepts an array of Name.Component or Buffer.
+* Renamed ContentObject class to Data.  In the UpcallInfo object, renamed contentObject to data.
+* EncodingUtils: Added encodeToHexData, decodeHexData and dataToHtml.
+* Moved files in tests/ to tests/browser/ .
+* Added test files from NDN-On-Node to tests/node/ . 
+* http://redmine.named-data.net/issues/1052 wsproxy: Added -n command line option to set the ndnd port.
+* In EncodingUtils.js, made all functions static members of EncodingUtils.
+* http://redmine.named-data.net/issues/1038 Default to not verify data packets until crypto API is updated.
+* Added NameEnumeration support and a test in tests/browser/test-name-enumeration.html.
+* Updated security library to use 'RSA-Sign JavaScript Library' and 'crypto.js'.
+* Removed unsupported Witness.js (Merkle trees). Rename Signature.Witness to witness (lower case) and it is just a Buffer.
+* Removed unimplemented TextXML encoder, especially since we will move away from XML wire formats.
+* Internally changed "ccn" to "ndn" in function names and comments.
+* Added Interest.toUri().
+* http://redmine.named-data.net/issues/1059 Changed file names to lower case. Applications include build/ndn.js, so are unaffected.
+* Firefox add-on: Support NDNFS: If the returned data name has %C1.FS.file, remove it and request the actual file.
+
+Deprecated
+* build/ndn-js.js and build/ndn-js.min.js.  You should use build/ndn.js and build/ndn.min.js.
+* ndnProtocol.xpi. Use ndn-protocol.xpi which is the new name of the Firefox add-on file.
+* NDN: This class is deprecated. Use Face.
+* ContentObject: This class is deprecated. Use Data.
+* Name: Deprecated getComponent.  Use get(i).getValue().
+* Name: Deprecated getComponentCount.  Use size().
+* Name: Deprecated to_uri.  Use toUri.
+* Name: Deprecated getName.  Use toUri.
+* Name: Deprecated add and addSegment.  Use append and appendSegment.
+* Name: Deprecated equalsName.  Use equals.
+* Name: Deprecated matches_name.  Use matchesName.
+* EncodingUtils.js: Deprecated using the global functions.  Use static members of EncodingUtils class.
+* EncodingUtils.js: Deprecated encodeToBinaryInterest. Use interest.encode().
+* EncodingUtils.js: Deprecated encodeToBinaryContentObject. Use data.encode().
+* EncodingUtils.js: Deprecated encodeToHexContentObject. Use EncodingUtils.encodeToHexData.
+* EncodingUtils.js: Deprecated decodeHexContentObject. Use EncodingUtils.decodeHexData.
+* EncodingUtils.js: Deprecated contentObjectToHtml. Use EncodingUtils.dataToHtml.
+
+Bug fixes
+* http://redmine.named-data.net/issues/1034 BinaryXMLDecoder.decodeTypeAndVal does not stop at end of stream.
+
+NDN-JS v0.1 (2013-08-06)
+------------------------
+
+This is the initial release, compatible with the API in use for about the past year.
+The API will change soon for v0.2 .

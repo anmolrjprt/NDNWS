@@ -1,0 +1,82 @@
+<?xml version = "1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"DTD/xhtml1-strict.dtd">
+<!-- 
+	See COPYING for copyright and distribution information.
+-->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Test Encode/Decode Benchmark</title>
+	
+	<script type="text/javascript" src="../../build/ndn.js"></script>
+	<script type="text/javascript" src="test-encode-decode-benchmark.js"></script>
+
+	<script type="text/javascript">
+    /**
+     * Call benchmarkEncodeDataSeconds and benchmarkDecodeDataSeconds with appropriate nInterations.  Print the 
+     * results to console.log.
+     * @param {boolean} useComplex See benchmarkEncodeDataSeconds.
+     * @param {boolean} useCrypto See benchmarkEncodeDataSeconds and benchmarkDecodeDataSeconds.
+     * @paran {function} continuation (optional) If not null, when finished call setTimeout(continuation, 100) so that
+     * the output is shown in the browser before continuing.
+     */
+    function benchmarkEncodeDecodeData(useComplex, useCrypto, continuation)
+    {
+      var format = WireFormat.getDefaultWireFormat() === BinaryXmlWireFormat.get() ? "ndnb" : "TLV ";
+      // Use setTimeout so that the browser will update the display before continuing.
+      var encoding = [];
+      {
+        var nIterations = useCrypto ? 1000 : 150000;
+        var duration = TestEncodeDecodeBenchmark.benchmarkEncodeDataSeconds(nIterations, useComplex, useCrypto, encoding);
+        document.getElementById('result').innerHTML +=
+          "Encode " + (useComplex ? "complex " : "simple  ") + format + " data: Crypto? " + (useCrypto ? "yes" : "no ") 
+          + ", Duration sec, Hz: " + duration + ", " + (nIterations / duration) + "<br/>";  
+      }
+      setTimeout(function() {
+        var nIterations = useCrypto ? 8000 : 50000;
+        var duration = TestEncodeDecodeBenchmark.benchmarkDecodeDataSeconds(nIterations, useCrypto, encoding[0]);
+        document.getElementById('result').innerHTML +=
+          "Decode " + (useComplex ? "complex " : "simple  ") + format + " data: Crypto? " + (useCrypto ? "yes" : "no ") 
+          + ", Duration sec, Hz: " + duration + ", " + (nIterations / duration) + "<br/>";  
+  
+        if (continuation)
+          setTimeout(continuation, 100);
+      }, 100);
+    }
+
+		function test(){
+      document.getElementById('result').innerHTML = "Results:<br/>";
+      
+      // Make two passes, one for each wire format.
+      WireFormat.setDefaultWireFormat(BinaryXmlWireFormat.get());
+      benchmarkEncodeDecodeData(false, false, function() {
+      benchmarkEncodeDecodeData(true, false, function() {
+      benchmarkEncodeDecodeData(false, true, function() {
+      benchmarkEncodeDecodeData(true, true, function() {
+      WireFormat.setDefaultWireFormat(TlvWireFormat.get());
+      benchmarkEncodeDecodeData(false, false, function() {
+      benchmarkEncodeDecodeData(true, false, function() {
+      benchmarkEncodeDecodeData(false, true, function() {
+      benchmarkEncodeDecodeData(true, true, function() {
+      document.getElementById('result').innerHTML += "Finished.<br/>";
+      });
+      });
+      });
+      });
+      });
+      });
+      });
+      });
+		}
+
+	</script>
+
+</head>
+<body >
+	<button onclick="test()">Test</button>
+	
+	<p id="result"></p>
+
+</body>
+</html>

@@ -1,0 +1,678 @@
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+<script type="text/javascript" src="myScript.js"></script>
+
+
+<html>
+<style>
+body
+{
+background-color:#b0c4de;
+}
+</style>
+<head><br>
+<b>Test 1</b>
+</head><br><br>
+<body>
+<a href="beta.jpg"><img src="alpha.jpg" /></a>
+<h4> <a href="test2.html" >Next Page </a></h4>
+<script>
+function todaydate(){
+var today_date= new Date();
+var myyear=today_date.getYear()-100;
+var mymonth=today_date.getMonth()+1;
+var mytoday=today_date.getDate();
+document.getElementById("demo").innerHTML=mymonth+"/"+mytoday+"/"+myyear;
+}
+
+</script>
+<p id="demo">Time placeholder</p>
+<p>
+<button type="button" onclick="todaydate()">Try it</button>
+</p>
+Sentiment analysis aims to make sense of the Internet of People. That’s what interests me, technologies that take on the thinking, feeling, social network of interconnected individuals. Built into business solutions and cognitive systems that “learn and interact naturally with people to extend what either humans or machine could do on their own” (IBM), these technologies enrich and enhance our personal and business interactions.
+<br><br>
+Contrast with all we’ve been hearing about the Internet of Things. Who isn’t eager for killer apps such as a smart fridge that will tell you when the milk is sour or even get an order in for you? Well, me for one, although I recognize that IOT technologies will make life more efficient. While the situation is not either/or, the mechanics of efficiency, behind the IOT, are simply not as intriguing as the human-understanding challenge posed by the Internet of People.
+<br><br>
+Plutchik wheel of emotionsHuman understanding entails ability to decipher language, measure and decode expressions and movements, model behaviors, and grasp cognitive processes. These “inputs” are complex and ambiguous. Context, culture, and persona (situational profile) are critical elements. These factors make human data tougher to master than the IOT’s machine-data streams.
+<br><br>
+Fortunately, a little bit of sentiment analysis can take you far, in customer experience, market research, financial services, and social/media analysis. The technology has proven itself in these areas, even if most implementations have involved over-simplified positive/negative sentiment scoring. Fortunately also then that we do not lack for sentiment analysis innovation.
+<br><br>
+Three Innovation Categories
+<br><br>
+Let’s look at sentiment analysis innovation in three categories. I’ll provide innovator examples — technologies that work, outside the lab — and describe how each is advancing methods or applications.
+<br><br>
+My perspective is this: I work as an industry analyst and consultant covering business intelligence, text analytics, and sentiment analysis. I talk to a lot of people: Researchers, solution providers, business users, and fellow analysts, and I organize a conference that is unique in its coverage of industry applications of sensemaking technologies, the Sentiment Analysis Symposium, next up March 5-6 in New York. These technologies include text & speech analytics, natural language processing, semantics, etc., and the data acquisition, integration, and visualization components and industry adaptations that turn them into business solutions.
+<br><br>
+In this look at sentiment analysis innovation, let’s examine:
+<br><br>
+    Improvers: Who’s accomplishing mainstream tasks better — more accessibly, more accurately, and at greater scale.
+    Extenders: Who’s accomplishing new tasks — bringing on-line new data sources, extracting fresh insights, answering new use cases.
+    Disruptors: Who’s redefining the problem, via new methods and new solutions.
+<br><br>
+Some of the companies I cite could fit in more than one category, and without question, I’ll miss a few great start-ups. My aim is to provide examples, not an exhaustive or rigidly classified catalog of companies in the space. A final disclaimer: A number of the companies I will cite are sponsoring the symposium or a text-analytics market study I am currently conducting. I’ll list them in a disclosure toward the end of this article.
+<br><br>
+Improvers: More, Better
+<br><br>
+In this category, let’s start with participants in the API economy, analysis providers whose sentiment engines are accessed on-demand, via a Web-service application programming interface. Consider:
+<br><br>
+    Semantria, providing via-API, on-demand access to the Lexalytics Salience engine, Lexalytics’ being the market’s leading pure-play sentiment-analysis provider. Semantria provides SDKs (software development kits) for a variety of programming environments and hooks into applications such as Excel. Net is that Semantria democratizes access to sentiment analysis.
+    ConveyAPI is breaking ground on accuracy and domain adaptation for brand social-media sentiment analysis. ConveyAPI was created by social-media agency Converseon, which recently spun it out into a subsidiary that provides on-demand, via-API access to the Conversation Miner engine. The technology relies on supervised learning from human-annotated social-media training data specific to a variety of industry domains.
+<br><br>
+Platforms are the inverse of services: They provide application and orchestration frameworks that support via-API invocation of external Web and local services. Programming languages popular among data scientists, such as Python, R, Java, and Scala, provide, in a sense, platforms for application-building, but I have in mind something higher-level. Consider instead platforms designed specifically for language-analysis such as:
+<br><br>
+    GATE, the General Architecture for Text Engineering, still innovative after all these years (around 15 since project founding). I base this assessment on developer Diana Maynard’s tweeted comment about my recent Social Sentiment’s Missing Measures article, that a GATE project is dealing with advanced sentiment measures I cited, density, variation, and volatility.
+<br><br>
+GATE is an open-source project with development centered at the University of Sheffield and world-wide community participation. Where there’s a platform, there’s often a community of users, builders, and partners, and — examples such as the Apple App Store and Google Play are old hat — a marketplace that allows community members to distribute and sell their contributions. Notable platform+marketplace examples, supporting sentiment solution building — unusual in the sentiment-analysis world, are:
+<br><br>
+    TEMIS, whose Luxid text-analysis platform is built around the Apache UIMA framework, which allows plug-in of external resources, namely of annotators that perform specialized information extraction and analysis functions. TEMIS characterizes the Luxid Community as “the first community platform for semantics.”
+    QlikView, which you may know as a BI tool for visual, exploratory data analysis, but which similarly boasts an open architecture, exploited by QlikMarket participants. I particularly like the work of QlikTech partner QVSource, which provides an array of connectors to social and online information sources, including for sentiment and text analysis.
+<br><br>
+In the social-analytics world, Radian6 — part of Salesforce Marketing Cloud — pioneered the platform/marketplace approach, but after repeatedly hearing messages like this one I received on February 6, “I am using Radian6 to pull in data, but their sentiment analysis is not useful and I ignore it,” I infer that the company has de-innovated on the sentiment-analysis front.
+<br><br>
+Extenders: New Frontiers
+<br><br>
+I’m particularly interested in ability to extract new types of information from existing and new sources and in new indicators (derived, computed values) that can be used with confidence to guide business decision-making.
+<br><br>
+The sentiment-analysis frontier is moving beyond systems that resolve sentiment at the feature level — sentiment about entities (named individuals, companies, and geographic locations, etc.) and topics — so my examples will focus on, let’s call it, extended subjectivity. Consider:
+<br><br>
+    Datumbox, which aims to identify subjectivity, genre, gender, readability, and other beyond-meaning senses.
+    Social Market Analytics, bringing to Twitter-sourced analyses the sort of technicals beloved by financial-market traders, elements such as volatility and dispersion.
+    Kanjoya, a commercialization of the Experience Project at Stanford University, which analyzes expressions, emotions, and behaviors to further brand business goals.
+<br><br>
+Consider, also, information extraction from non-textual media, from speech, images, and video. Eye movement, facial expressions, speech tone and patterns, and other biometrics indicate mood and emotion. Without description, I’ll cite:
+<br><br>
+    Facial recognition and emotion resolution vendors Affectiva, Emotient, Eyeris, and RealEyes.
+    Speech analysis vendors Beyond Verbal and NICE. (Other speech-analytics vendors, such as Nexidia, appear not to extract emotion.)
+<br><br>
+One special bit of coolness is indicated in a TechCrunch article: Affectiva Launches An SDK To Bring Emotion Tracking To Mobile Apps, offering ability to decode emotion in images captured on mobile devices. Others, notably React Labs, created by Philip Resnik, a linguistics professor at the University of Maryland, are working to toward real-time opinion gathering. But mobile sentiment measurement is no more a slam-dunk than any other cutting-edge implementation. Witness the demise of mobile feedback service Swipp despite $9 million in 2012-3 funding.
+<br><br>
+Finally, we have new indicators such as advocacy, engagement, and motivation, more sophisticated and useful than crude, first-generation quantities such as influence:
+<br><br>
+    MotiveQuest calls its business online anthropology, an approach to understanding behaviors in order to promote customer advocacy and engagement. CEO David Rabjohns explains, “When we talk about motivations we use that term as a headline for the way people want to feel at a primal/tribal level (feel successful, feel creative, feel smart, etc.). With our MotiveScape tool we use sophisticated linguistic algorithms to explore and tag the different ways talk about the 12 broad motivational areas.”
+    IBM, similarly, is pursuing new initiatives in engagement analytics, an innovation I’ve chosen to showcase at my up-coming Sentiment Analysis Symposium in the form of a keynote by social-business technology leader Marie Wallace.
+<br><br>
+Disruptors: Killers and Creators
+<br><br>
+I’ll admit in advance that if I had a crystal ball for about-to-appear-out-of-nowhere disruptors, I’d be in a different line of business. But I do acknowledge certain now widely recognized disruption-enabling technologies, namely machine learning, mobile, and cloud.
+<br><br>
+I’ll reserve the mobile topic for another occasion, and I’ve covered cloud in citing a number of sentiment-as-a-Web-service offerings. I’ll add only how impressed I am by the extension of the coverage, capacity, and value of data-as-a-service providers such as DataSift, Gnip, and Xignite, which include sentiment among the varieties of supported tagging. They’re not analytics providers — the move to relocate analytics to the cloud is obvious rather than earth-shaking — rather, the emerging data economy is built around them and others like them.
+<br><br>
+I’ve saved the best for last.
+<br><br>
+We all recognize the benefits that machine learning — in particular, unsupervised methods and deep learning — are bringing to a host of computing problems. The algorithms are newly effective and efficient, required computing hardware is powerful and cheap, and data is abundant and available, so we can now let the machines find their own ways. We can move away from exclusive reliance on rigid and hard-to-maintain rules and supervised learning based on predefined categories (not that those systems aren’t and won’t remain right, best even, for a good many problems), where models apply well only for the language and business domain of the labeled training data.
+<br><br>
+Why unsupervised learning? Eliott Turner, who founded text analysis provider AlchemyAPI in 2005, says “a never-ending challenge to understanding text is staying current with emerging slang and phrases. Unsupervised learning can enable machines to discover new words without human-curated training sets.” (Contrast with semi-supervised learning, applying unsupervised learning to refine models built initially from labeled training data, and with non-learning unsupervised methods such a Latent Semantic Analysis for topic extraction.)
+<br><br>
+Luminoso applies unsupervised learning to populate a “multi-dimensional semantic space” and uses the learned patterns to text-analysis tasks. (Luminoso co-founder and CEO Catherine Havasi is co-author of a paper, New Avenues in Opinion Mining and Sentiment Analysis, that covers approaches to the sentiment challenges.)
+<br><br>
+And deep learning, involving multi-level, hierarchical models? “Deep learning can give us a much richer representation of text than is possible with traditional natural-language processing,… more robust text and vision systems that hold their accuracy when analyzing data far different from what they were trained on,” according to Turner, but requires massive training data sets, technical innovations, and a lot of affordable computing power.
+<br><br>
+No Guarantees
+<br><br>
+Clearly I’m an innovation fan, but like any sensible market watcher, I understand the reality that innovation alone doesn’t ensure success. Frederik Hermann, former VP Global Marketing at Swipp graciously allowed me to quote him on Swipp’s demise: ”Unfortunately Swipp is dead. Corporate buy in to use our APIs and technology took too long and therefore revenues remained flat while the consumer app didn’t provide enough immediate value add unless coupled with a larger corporate partnership for real scale.” Innovation is only one part of a larger market puzzle.
+<br><br>
+Disclosures and entanglements: Gnip, IBM, Lexalytics, and Converseon are four of the ten March Sentiment Analysis Symposium sponsors, and I engaged the guy who helped build Converseon’s Conversation Miner engine, computational linguist Jason Baldridge of the Univ. of Texas, to teach the Practical Sentiment Analysis tutorial at the symposium. Affectiva co-founder Rosalind Picard MIT Media Lab will be keynoting at the symposium, speaking on “Adventures in Emotion Recognition,” and we also have Jacob Whitehill of Emotient and Yuval Mor, CEO of Beyond Verbal, on the agenda. David Rabjohns and Kanjoya’s Moritz Sudhof will also speak at the symposium. Finally, Luminoso, Lexalytics, and AlchemyAPI are three of the eight sponsors of my Text Analytics 2014 market study.
+<br><br>
+Quite often, the focus of analytics efforts is highly skewed towards quantitative aspects and the qualitative efforts are either negligible or replaced by the executives’ “gut feeling”. It is imperative to understand how such a casual approach can hurt your business.
+<br><br>
+The analysis of qualitative data through the methods generally used for qualitative research is referred to as Qualitative Analytics. The differentiation between Qualitative and Quantitative analytics is not always obvious. For example, during Text Analytics, measuring the frequency of certain words would be considered Quantitative Analytics; whereas exploring the contextual meaning of popular words would be considered Qualitative Analytics. In other words, Qualitative Analytics includes the analysis of context, human behavior, emotions and other factors that are hard to digitize without losing any meaning.
+<br><br>
+Qualitative Quantitative Research Qualitative analytics is a very powerful tool for exploratory research – the earliest phase of analytics. It is also a great tool to bridge the gap between insights provided by quantitative research, and provide in-depth understanding of the underlying reasons and motivations for a phenomenon. Pragmatic qualitative research is done through a variety of methods. While some of them are simple such as Surveys and Interviews, others are highly advanced such as Ethnography and Phenomenology.
+<br><br>
+One of the most common myths about qualitative analytics is that it is useful only for academic researchers in selected fields such as social sciences and neuroscience marketing. The truth is that - almost all business problems have a qualitative aspect, and thus, quantitative analysis alone would never be able to tell the complete story.
+<br><br>
+As an example, let’s consider web analytics. All leading web analytics software have excellent quantitative analytics capabilities. They can easily, yet precisely, provide information such as: number of users who visited the website during a given time period, geographic locations from which the website was accessed, time period for which user stayed on the website, etc. However, when it comes to the “true business value” questions (such as why did the customer not make the purchase? what factors influenced the customer’s buying decision? how did the customer feel after the purchase?) these web analytics software, at-best provide vague answers.
+<br><br>
+So, if you are narrowly focused on the clickstream, you will never be able to comprehend the thoughts going through customer’s mind as she moves across the “conversion funnel”. So, when you think of sales, instead of focusing on the “click” event, think broader about the interaction and overall experience. One of the most popular business Key Performance Indicator (KPI), Customer Satisfaction can never be measured through quantitative analytics alone. No amount of quantitative guessing can match the business value of “voice of customer”.
+<br><br>
+As the CMOs increasingly drift from Customer Relationship Management (CRM) to Customer Experience Management (CEM), there is an increasing need for holistic understanding of customer experience across the complete sale cycle. This can be achieved only through deploying qualitative analytics and integrating it with quantitative analytics to provide 360-degree data analysis.
+<br><br>
+Let’s face it. Quantitative analytics still needs more manual intervention and the results are often fuzzy. In absence of a clear-cut approach and thus automation, it is not as time and energy efficient as the traditional quantitative analytics. But, qualitative analytics is still indispensable as it provides deep, actionable insights about the ‘why’ and ‘how’ aspect, which often gets ignored as we continue to be inundated with the ‘what’ ‘where’ and ‘when’ of statistics.
+<br><br>
+With the rapid pace of technology advancement in recent times, it now seems that the software tools used for academic purpose are ready to deliver on the business analytics needs of the industry. MAXQDA, ATLAS.ti and NVivo are some of the best qualitative research tools, with extended capabilities of semi-automating the pattern recognition from content (such as subjective answers, interview transcripts or video recordings).
+<br><br>
+If you are a business manager, it is high time to think again about your analytics dashboard and whether qualitative analytics are getting your appropriate attention. 
+
+<h4> Part - I </h4>
+
+Sentiment analysis aims to make sense of the Internet of People. That’s what interests me, technologies that take on the thinking, feeling, social network of interconnected individuals. Built into business solutions and cognitive systems that “learn and interact naturally with people to extend what either humans or machine could do on their own” (IBM), these technologies enrich and enhance our personal and business interactions.
+<br><br>
+Contrast with all we’ve been hearing about the Internet of Things. Who isn’t eager for killer apps such as a smart fridge that will tell you when the milk is sour or even get an order in for you? Well, me for one, although I recognize that IOT technologies will make life more efficient. While the situation is not either/or, the mechanics of efficiency, behind the IOT, are simply not as intriguing as the human-understanding challenge posed by the Internet of People.
+<br><br>
+Plutchik wheel of emotionsHuman understanding entails ability to decipher language, measure and decode expressions and movements, model behaviors, and grasp cognitive processes. These “inputs” are complex and ambiguous. Context, culture, and persona (situational profile) are critical elements. These factors make human data tougher to master than the IOT’s machine-data streams.
+<br><br>
+Fortunately, a little bit of sentiment analysis can take you far, in customer experience, market research, financial services, and social/media analysis. The technology has proven itself in these areas, even if most implementations have involved over-simplified positive/negative sentiment scoring. Fortunately also then that we do not lack for sentiment analysis innovation.
+<br><br>
+Three Innovation Categories
+<br><br>
+Let’s look at sentiment analysis innovation in three categories. I’ll provide innovator examples — technologies that work, outside the lab — and describe how each is advancing methods or applications.
+<br><br>
+My perspective is this: I work as an industry analyst and consultant covering business intelligence, text analytics, and sentiment analysis. I talk to a lot of people: Researchers, solution providers, business users, and fellow analysts, and I organize a conference that is unique in its coverage of industry applications of sensemaking technologies, the Sentiment Analysis Symposium, next up March 5-6 in New York. These technologies include text & speech analytics, natural language processing, semantics, etc., and the data acquisition, integration, and visualization components and industry adaptations that turn them into business solutions.
+<br><br>
+In this look at sentiment analysis innovation, let’s examine:
+<br><br>
+    Improvers: Who’s accomplishing mainstream tasks better — more accessibly, more accurately, and at greater scale.
+    Extenders: Who’s accomplishing new tasks — bringing on-line new data sources, extracting fresh insights, answering new use cases.
+    Disruptors: Who’s redefining the problem, via new methods and new solutions.
+<br><br>
+Some of the companies I cite could fit in more than one category, and without question, I’ll miss a few great start-ups. My aim is to provide examples, not an exhaustive or rigidly classified catalog of companies in the space. A final disclaimer: A number of the companies I will cite are sponsoring the symposium or a text-analytics market study I am currently conducting. I’ll list them in a disclosure toward the end of this article.
+<br><br>
+Improvers: More, Better
+<br><br>
+In this category, let’s start with participants in the API economy, analysis providers whose sentiment engines are accessed on-demand, via a Web-service application programming interface. Consider:
+<br><br>
+    Semantria, providing via-API, on-demand access to the Lexalytics Salience engine, Lexalytics’ being the market’s leading pure-play sentiment-analysis provider. Semantria provides SDKs (software development kits) for a variety of programming environments and hooks into applications such as Excel. Net is that Semantria democratizes access to sentiment analysis.
+    ConveyAPI is breaking ground on accuracy and domain adaptation for brand social-media sentiment analysis. ConveyAPI was created by social-media agency Converseon, which recently spun it out into a subsidiary that provides on-demand, via-API access to the Conversation Miner engine. The technology relies on supervised learning from human-annotated social-media training data specific to a variety of industry domains.
+<br><br>
+Platforms are the inverse of services: They provide application and orchestration frameworks that support via-API invocation of external Web and local services. Programming languages popular among data scientists, such as Python, R, Java, and Scala, provide, in a sense, platforms for application-building, but I have in mind something higher-level. Consider instead platforms designed specifically for language-analysis such as:
+<br><br>
+    GATE, the General Architecture for Text Engineering, still innovative after all these years (around 15 since project founding). I base this assessment on developer Diana Maynard’s tweeted comment about my recent Social Sentiment’s Missing Measures article, that a GATE project is dealing with advanced sentiment measures I cited, density, variation, and volatility.
+<br><br>
+GATE is an open-source project with development centered at the University of Sheffield and world-wide community participation. Where there’s a platform, there’s often a community of users, builders, and partners, and — examples such as the Apple App Store and Google Play are old hat — a marketplace that allows community members to distribute and sell their contributions. Notable platform+marketplace examples, supporting sentiment solution building — unusual in the sentiment-analysis world, are:
+<br><br>
+    TEMIS, whose Luxid text-analysis platform is built around the Apache UIMA framework, which allows plug-in of external resources, namely of annotators that perform specialized information extraction and analysis functions. TEMIS characterizes the Luxid Community as “the first community platform for semantics.”
+    QlikView, which you may know as a BI tool for visual, exploratory data analysis, but which similarly boasts an open architecture, exploited by QlikMarket participants. I particularly like the work of QlikTech partner QVSource, which provides an array of connectors to social and online information sources, including for sentiment and text analysis.
+<br><br>
+In the social-analytics world, Radian6 — part of Salesforce Marketing Cloud — pioneered the platform/marketplace approach, but after repeatedly hearing messages like this one I received on February 6, “I am using Radian6 to pull in data, but their sentiment analysis is not useful and I ignore it,” I infer that the company has de-innovated on the sentiment-analysis front.
+<br><br>
+Extenders: New Frontiers
+<br><br>
+I’m particularly interested in ability to extract new types of information from existing and new sources and in new indicators (derived, computed values) that can be used with confidence to guide business decision-making.
+<br><br>
+The sentiment-analysis frontier is moving beyond systems that resolve sentiment at the feature level — sentiment about entities (named individuals, companies, and geographic locations, etc.) and topics — so my examples will focus on, let’s call it, extended subjectivity. Consider:
+<br><br>
+    Datumbox, which aims to identify subjectivity, genre, gender, readability, and other beyond-meaning senses.
+    Social Market Analytics, bringing to Twitter-sourced analyses the sort of technicals beloved by financial-market traders, elements such as volatility and dispersion.
+    Kanjoya, a commercialization of the Experience Project at Stanford University, which analyzes expressions, emotions, and behaviors to further brand business goals.
+<br><br>
+Consider, also, information extraction from non-textual media, from speech, images, and video. Eye movement, facial expressions, speech tone and patterns, and other biometrics indicate mood and emotion. Without description, I’ll cite:
+<br><br>
+    Facial recognition and emotion resolution vendors Affectiva, Emotient, Eyeris, and RealEyes.
+    Speech analysis vendors Beyond Verbal and NICE. (Other speech-analytics vendors, such as Nexidia, appear not to extract emotion.)
+<br><br>
+One special bit of coolness is indicated in a TechCrunch article: Affectiva Launches An SDK To Bring Emotion Tracking To Mobile Apps, offering ability to decode emotion in images captured on mobile devices. Others, notably React Labs, created by Philip Resnik, a linguistics professor at the University of Maryland, are working to toward real-time opinion gathering. But mobile sentiment measurement is no more a slam-dunk than any other cutting-edge implementation. Witness the demise of mobile feedback service Swipp despite $9 million in 2012-3 funding.
+<br><br>
+Finally, we have new indicators such as advocacy, engagement, and motivation, more sophisticated and useful than crude, first-generation quantities such as influence:
+<br><br>
+    MotiveQuest calls its business online anthropology, an approach to understanding behaviors in order to promote customer advocacy and engagement. CEO David Rabjohns explains, “When we talk about motivations we use that term as a headline for the way people want to feel at a primal/tribal level (feel successful, feel creative, feel smart, etc.). With our MotiveScape tool we use sophisticated linguistic algorithms to explore and tag the different ways talk about the 12 broad motivational areas.”
+    IBM, similarly, is pursuing new initiatives in engagement analytics, an innovation I’ve chosen to showcase at my up-coming Sentiment Analysis Symposium in the form of a keynote by social-business technology leader Marie Wallace.
+<br><br>
+Disruptors: Killers and Creators
+<br><br>
+I’ll admit in advance that if I had a crystal ball for about-to-appear-out-of-nowhere disruptors, I’d be in a different line of business. But I do acknowledge certain now widely recognized disruption-enabling technologies, namely machine learning, mobile, and cloud.
+<br><br>
+I’ll reserve the mobile topic for another occasion, and I’ve covered cloud in citing a number of sentiment-as-a-Web-service offerings. I’ll add only how impressed I am by the extension of the coverage, capacity, and value of data-as-a-service providers such as DataSift, Gnip, and Xignite, which include sentiment among the varieties of supported tagging. They’re not analytics providers — the move to relocate analytics to the cloud is obvious rather than earth-shaking — rather, the emerging data economy is built around them and others like them.
+<br><br>
+I’ve saved the best for last.
+<br><br>
+We all recognize the benefits that machine learning — in particular, unsupervised methods and deep learning — are bringing to a host of computing problems. The algorithms are newly effective and efficient, required computing hardware is powerful and cheap, and data is abundant and available, so we can now let the machines find their own ways. We can move away from exclusive reliance on rigid and hard-to-maintain rules and supervised learning based on predefined categories (not that those systems aren’t and won’t remain right, best even, for a good many problems), where models apply well only for the language and business domain of the labeled training data.
+<br><br>
+Why unsupervised learning? Eliott Turner, who founded text analysis provider AlchemyAPI in 2005, says “a never-ending challenge to understanding text is staying current with emerging slang and phrases. Unsupervised learning can enable machines to discover new words without human-curated training sets.” (Contrast with semi-supervised learning, applying unsupervised learning to refine models built initially from labeled training data, and with non-learning unsupervised methods such a Latent Semantic Analysis for topic extraction.)
+<br><br>
+Luminoso applies unsupervised learning to populate a “multi-dimensional semantic space” and uses the learned patterns to text-analysis tasks. (Luminoso co-founder and CEO Catherine Havasi is co-author of a paper, New Avenues in Opinion Mining and Sentiment Analysis, that covers approaches to the sentiment challenges.)
+<br><br>
+And deep learning, involving multi-level, hierarchical models? “Deep learning can give us a much richer representation of text than is possible with traditional natural-language processing,… more robust text and vision systems that hold their accuracy when analyzing data far different from what they were trained on,” according to Turner, but requires massive training data sets, technical innovations, and a lot of affordable computing power.
+<br><br>
+No Guarantees
+<br><br>
+Clearly I’m an innovation fan, but like any sensible market watcher, I understand the reality that innovation alone doesn’t ensure success. Frederik Hermann, former VP Global Marketing at Swipp graciously allowed me to quote him on Swipp’s demise: ”Unfortunately Swipp is dead. Corporate buy in to use our APIs and technology took too long and therefore revenues remained flat while the consumer app didn’t provide enough immediate value add unless coupled with a larger corporate partnership for real scale.” Innovation is only one part of a larger market puzzle.
+<br><br>
+Disclosures and entanglements: Gnip, IBM, Lexalytics, and Converseon are four of the ten March Sentiment Analysis Symposium sponsors, and I engaged the guy who helped build Converseon’s Conversation Miner engine, computational linguist Jason Baldridge of the Univ. of Texas, to teach the Practical Sentiment Analysis tutorial at the symposium. Affectiva co-founder Rosalind Picard MIT Media Lab will be keynoting at the symposium, speaking on “Adventures in Emotion Recognition,” and we also have Jacob Whitehill of Emotient and Yuval Mor, CEO of Beyond Verbal, on the agenda. David Rabjohns and Kanjoya’s Moritz Sudhof will also speak at the symposium. Finally, Luminoso, Lexalytics, and AlchemyAPI are three of the eight sponsors of my Text Analytics 2014 market study.
+<br><br>
+Quite often, the focus of analytics efforts is highly skewed towards quantitative aspects and the qualitative efforts are either negligible or replaced by the executives’ “gut feeling”. It is imperative to understand how such a casual approach can hurt your business.
+<br><br>
+The analysis of qualitative data through the methods generally used for qualitative research is referred to as Qualitative Analytics. The differentiation between Qualitative and Quantitative analytics is not always obvious. For example, during Text Analytics, measuring the frequency of certain words would be considered Quantitative Analytics; whereas exploring the contextual meaning of popular words would be considered Qualitative Analytics. In other words, Qualitative Analytics includes the analysis of context, human behavior, emotions and other factors that are hard to digitize without losing any meaning.
+<br><br>
+Qualitative Quantitative Research Qualitative analytics is a very powerful tool for exploratory research – the earliest phase of analytics. It is also a great tool to bridge the gap between insights provided by quantitative research, and provide in-depth understanding of the underlying reasons and motivations for a phenomenon. Pragmatic qualitative research is done through a variety of methods. While some of them are simple such as Surveys and Interviews, others are highly advanced such as Ethnography and Phenomenology.
+<br><br>
+One of the most common myths about qualitative analytics is that it is useful only for academic researchers in selected fields such as social sciences and neuroscience marketing. The truth is that - almost all business problems have a qualitative aspect, and thus, quantitative analysis alone would never be able to tell the complete story.
+<br><br>
+As an example, let’s consider web analytics. All leading web analytics software have excellent quantitative analytics capabilities. They can easily, yet precisely, provide information such as: number of users who visited the website during a given time period, geographic locations from which the website was accessed, time period for which user stayed on the website, etc. However, when it comes to the “true business value” questions (such as why did the customer not make the purchase? what factors influenced the customer’s buying decision? how did the customer feel after the purchase?) these web analytics software, at-best provide vague answers.
+<br><br>
+So, if you are narrowly focused on the clickstream, you will never be able to comprehend the thoughts going through customer’s mind as she moves across the “conversion funnel”. So, when you think of sales, instead of focusing on the “click” event, think broader about the interaction and overall experience. One of the most popular business Key Performance Indicator (KPI), Customer Satisfaction can never be measured through quantitative analytics alone. No amount of quantitative guessing can match the business value of “voice of customer”.
+<br><br>
+As the CMOs increasingly drift from Customer Relationship Management (CRM) to Customer Experience Management (CEM), there is an increasing need for holistic understanding of customer experience across the complete sale cycle. This can be achieved only through deploying qualitative analytics and integrating it with quantitative analytics to provide 360-degree data analysis.
+<br><br>
+Let’s face it. Quantitative analytics still needs more manual intervention and the results are often fuzzy. In absence of a clear-cut approach and thus automation, it is not as time and energy efficient as the traditional quantitative analytics. But, qualitative analytics is still indispensable as it provides deep, actionable insights about the ‘why’ and ‘how’ aspect, which often gets ignored as we continue to be inundated with the ‘what’ ‘where’ and ‘when’ of statistics.
+<br><br>
+With the rapid pace of technology advancement in recent times, it now seems that the software tools used for academic purpose are ready to deliver on the business analytics needs of the industry. MAXQDA, ATLAS.ti and NVivo are some of the best qualitative research tools, with extended capabilities of semi-automating the pattern recognition from content (such as subjective answers, interview transcripts or video recordings).
+<br><br>
+If you are a business manager, it is high time to think again about your analytics dashboard and whether qualitative analytics are getting your appropriate attention. 
+
+<h4> Part - II </h4>
+Sentiment analysis aims to make sense of the Internet of People. That’s what interests me, technologies that take on the thinking, feeling, social network of interconnected individuals. Built into business solutions and cognitive systems that “learn and interact naturally with people to extend what either humans or machine could do on their own” (IBM), these technologies enrich and enhance our personal and business interactions.
+<br><br>
+Contrast with all we’ve been hearing about the Internet of Things. Who isn’t eager for killer apps such as a smart fridge that will tell you when the milk is sour or even get an order in for you? Well, me for one, although I recognize that IOT technologies will make life more efficient. While the situation is not either/or, the mechanics of efficiency, behind the IOT, are simply not as intriguing as the human-understanding challenge posed by the Internet of People.
+<br><br>
+Plutchik wheel of emotionsHuman understanding entails ability to decipher language, measure and decode expressions and movements, model behaviors, and grasp cognitive processes. These “inputs” are complex and ambiguous. Context, culture, and persona (situational profile) are critical elements. These factors make human data tougher to master than the IOT’s machine-data streams.
+<br><br>
+Fortunately, a little bit of sentiment analysis can take you far, in customer experience, market research, financial services, and social/media analysis. The technology has proven itself in these areas, even if most implementations have involved over-simplified positive/negative sentiment scoring. Fortunately also then that we do not lack for sentiment analysis innovation.
+<br><br>
+Three Innovation Categories
+<br><br>
+Let’s look at sentiment analysis innovation in three categories. I’ll provide innovator examples — technologies that work, outside the lab — and describe how each is advancing methods or applications.
+<br><br>
+My perspective is this: I work as an industry analyst and consultant covering business intelligence, text analytics, and sentiment analysis. I talk to a lot of people: Researchers, solution providers, business users, and fellow analysts, and I organize a conference that is unique in its coverage of industry applications of sensemaking technologies, the Sentiment Analysis Symposium, next up March 5-6 in New York. These technologies include text & speech analytics, natural language processing, semantics, etc., and the data acquisition, integration, and visualization components and industry adaptations that turn them into business solutions.
+<br><br>
+In this look at sentiment analysis innovation, let’s examine:
+<br><br>
+    Improvers: Who’s accomplishing mainstream tasks better — more accessibly, more accurately, and at greater scale.
+    Extenders: Who’s accomplishing new tasks — bringing on-line new data sources, extracting fresh insights, answering new use cases.
+    Disruptors: Who’s redefining the problem, via new methods and new solutions.
+<br><br>
+Some of the companies I cite could fit in more than one category, and without question, I’ll miss a few great start-ups. My aim is to provide examples, not an exhaustive or rigidly classified catalog of companies in the space. A final disclaimer: A number of the companies I will cite are sponsoring the symposium or a text-analytics market study I am currently conducting. I’ll list them in a disclosure toward the end of this article.
+<br><br>
+Improvers: More, Better
+<br><br>
+In this category, let’s start with participants in the API economy, analysis providers whose sentiment engines are accessed on-demand, via a Web-service application programming interface. Consider:
+<br><br>
+    Semantria, providing via-API, on-demand access to the Lexalytics Salience engine, Lexalytics’ being the market’s leading pure-play sentiment-analysis provider. Semantria provides SDKs (software development kits) for a variety of programming environments and hooks into applications such as Excel. Net is that Semantria democratizes access to sentiment analysis.
+    ConveyAPI is breaking ground on accuracy and domain adaptation for brand social-media sentiment analysis. ConveyAPI was created by social-media agency Converseon, which recently spun it out into a subsidiary that provides on-demand, via-API access to the Conversation Miner engine. The technology relies on supervised learning from human-annotated social-media training data specific to a variety of industry domains.
+<br><br>
+Platforms are the inverse of services: They provide application and orchestration frameworks that support via-API invocation of external Web and local services. Programming languages popular among data scientists, such as Python, R, Java, and Scala, provide, in a sense, platforms for application-building, but I have in mind something higher-level. Consider instead platforms designed specifically for language-analysis such as:
+<br><br>
+    GATE, the General Architecture for Text Engineering, still innovative after all these years (around 15 since project founding). I base this assessment on developer Diana Maynard’s tweeted comment about my recent Social Sentiment’s Missing Measures article, that a GATE project is dealing with advanced sentiment measures I cited, density, variation, and volatility.
+<br><br>
+GATE is an open-source project with development centered at the University of Sheffield and world-wide community participation. Where there’s a platform, there’s often a community of users, builders, and partners, and — examples such as the Apple App Store and Google Play are old hat — a marketplace that allows community members to distribute and sell their contributions. Notable platform+marketplace examples, supporting sentiment solution building — unusual in the sentiment-analysis world, are:
+<br><br>
+    TEMIS, whose Luxid text-analysis platform is built around the Apache UIMA framework, which allows plug-in of external resources, namely of annotators that perform specialized information extraction and analysis functions. TEMIS characterizes the Luxid Community as “the first community platform for semantics.”
+    QlikView, which you may know as a BI tool for visual, exploratory data analysis, but which similarly boasts an open architecture, exploited by QlikMarket participants. I particularly like the work of QlikTech partner QVSource, which provides an array of connectors to social and online information sources, including for sentiment and text analysis.
+<br><br>
+In the social-analytics world, Radian6 — part of Salesforce Marketing Cloud — pioneered the platform/marketplace approach, but after repeatedly hearing messages like this one I received on February 6, “I am using Radian6 to pull in data, but their sentiment analysis is not useful and I ignore it,” I infer that the company has de-innovated on the sentiment-analysis front.
+<br><br>
+Extenders: New Frontiers
+<br><br>
+I’m particularly interested in ability to extract new types of information from existing and new sources and in new indicators (derived, computed values) that can be used with confidence to guide business decision-making.
+<br><br>
+The sentiment-analysis frontier is moving beyond systems that resolve sentiment at the feature level — sentiment about entities (named individuals, companies, and geographic locations, etc.) and topics — so my examples will focus on, let’s call it, extended subjectivity. Consider:
+<br><br>
+    Datumbox, which aims to identify subjectivity, genre, gender, readability, and other beyond-meaning senses.
+    Social Market Analytics, bringing to Twitter-sourced analyses the sort of technicals beloved by financial-market traders, elements such as volatility and dispersion.
+    Kanjoya, a commercialization of the Experience Project at Stanford University, which analyzes expressions, emotions, and behaviors to further brand business goals.
+<br><br>
+Consider, also, information extraction from non-textual media, from speech, images, and video. Eye movement, facial expressions, speech tone and patterns, and other biometrics indicate mood and emotion. Without description, I’ll cite:
+<br><br>
+    Facial recognition and emotion resolution vendors Affectiva, Emotient, Eyeris, and RealEyes.
+    Speech analysis vendors Beyond Verbal and NICE. (Other speech-analytics vendors, such as Nexidia, appear not to extract emotion.)
+<br><br>
+One special bit of coolness is indicated in a TechCrunch article: Affectiva Launches An SDK To Bring Emotion Tracking To Mobile Apps, offering ability to decode emotion in images captured on mobile devices. Others, notably React Labs, created by Philip Resnik, a linguistics professor at the University of Maryland, are working to toward real-time opinion gathering. But mobile sentiment measurement is no more a slam-dunk than any other cutting-edge implementation. Witness the demise of mobile feedback service Swipp despite $9 million in 2012-3 funding.
+<br><br>
+Finally, we have new indicators such as advocacy, engagement, and motivation, more sophisticated and useful than crude, first-generation quantities such as influence:
+<br><br>
+    MotiveQuest calls its business online anthropology, an approach to understanding behaviors in order to promote customer advocacy and engagement. CEO David Rabjohns explains, “When we talk about motivations we use that term as a headline for the way people want to feel at a primal/tribal level (feel successful, feel creative, feel smart, etc.). With our MotiveScape tool we use sophisticated linguistic algorithms to explore and tag the different ways talk about the 12 broad motivational areas.”
+    IBM, similarly, is pursuing new initiatives in engagement analytics, an innovation I’ve chosen to showcase at my up-coming Sentiment Analysis Symposium in the form of a keynote by social-business technology leader Marie Wallace.
+<br><br>
+Disruptors: Killers and Creators
+<br><br>
+I’ll admit in advance that if I had a crystal ball for about-to-appear-out-of-nowhere disruptors, I’d be in a different line of business. But I do acknowledge certain now widely recognized disruption-enabling technologies, namely machine learning, mobile, and cloud.
+<br><br>
+I’ll reserve the mobile topic for another occasion, and I’ve covered cloud in citing a number of sentiment-as-a-Web-service offerings. I’ll add only how impressed I am by the extension of the coverage, capacity, and value of data-as-a-service providers such as DataSift, Gnip, and Xignite, which include sentiment among the varieties of supported tagging. They’re not analytics providers — the move to relocate analytics to the cloud is obvious rather than earth-shaking — rather, the emerging data economy is built around them and others like them.
+<br><br>
+I’ve saved the best for last.
+<br><br>
+We all recognize the benefits that machine learning — in particular, unsupervised methods and deep learning — are bringing to a host of computing problems. The algorithms are newly effective and efficient, required computing hardware is powerful and cheap, and data is abundant and available, so we can now let the machines find their own ways. We can move away from exclusive reliance on rigid and hard-to-maintain rules and supervised learning based on predefined categories (not that those systems aren’t and won’t remain right, best even, for a good many problems), where models apply well only for the language and business domain of the labeled training data.
+<br><br>
+Why unsupervised learning? Eliott Turner, who founded text analysis provider AlchemyAPI in 2005, says “a never-ending challenge to understanding text is staying current with emerging slang and phrases. Unsupervised learning can enable machines to discover new words without human-curated training sets.” (Contrast with semi-supervised learning, applying unsupervised learning to refine models built initially from labeled training data, and with non-learning unsupervised methods such a Latent Semantic Analysis for topic extraction.)
+<br><br>
+Luminoso applies unsupervised learning to populate a “multi-dimensional semantic space” and uses the learned patterns to text-analysis tasks. (Luminoso co-founder and CEO Catherine Havasi is co-author of a paper, New Avenues in Opinion Mining and Sentiment Analysis, that covers approaches to the sentiment challenges.)
+<br><br>
+And deep learning, involving multi-level, hierarchical models? “Deep learning can give us a much richer representation of text than is possible with traditional natural-language processing,… more robust text and vision systems that hold their accuracy when analyzing data far different from what they were trained on,” according to Turner, but requires massive training data sets, technical innovations, and a lot of affordable computing power.
+<br><br>
+No Guarantees
+<br><br>
+Clearly I’m an innovation fan, but like any sensible market watcher, I understand the reality that innovation alone doesn’t ensure success. Frederik Hermann, former VP Global Marketing at Swipp graciously allowed me to quote him on Swipp’s demise: ”Unfortunately Swipp is dead. Corporate buy in to use our APIs and technology took too long and therefore revenues remained flat while the consumer app didn’t provide enough immediate value add unless coupled with a larger corporate partnership for real scale.” Innovation is only one part of a larger market puzzle.
+<br><br>
+Disclosures and entanglements: Gnip, IBM, Lexalytics, and Converseon are four of the ten March Sentiment Analysis Symposium sponsors, and I engaged the guy who helped build Converseon’s Conversation Miner engine, computational linguist Jason Baldridge of the Univ. of Texas, to teach the Practical Sentiment Analysis tutorial at the symposium. Affectiva co-founder Rosalind Picard MIT Media Lab will be keynoting at the symposium, speaking on “Adventures in Emotion Recognition,” and we also have Jacob Whitehill of Emotient and Yuval Mor, CEO of Beyond Verbal, on the agenda. David Rabjohns and Kanjoya’s Moritz Sudhof will also speak at the symposium. Finally, Luminoso, Lexalytics, and AlchemyAPI are three of the eight sponsors of my Text Analytics 2014 market study.
+<br><br>
+Quite often, the focus of analytics efforts is highly skewed towards quantitative aspects and the qualitative efforts are either negligible or replaced by the executives’ “gut feeling”. It is imperative to understand how such a casual approach can hurt your business.
+<br><br>
+The analysis of qualitative data through the methods generally used for qualitative research is referred to as Qualitative Analytics. The differentiation between Qualitative and Quantitative analytics is not always obvious. For example, during Text Analytics, measuring the frequency of certain words would be considered Quantitative Analytics; whereas exploring the contextual meaning of popular words would be considered Qualitative Analytics. In other words, Qualitative Analytics includes the analysis of context, human behavior, emotions and other factors that are hard to digitize without losing any meaning.
+<br><br>
+Qualitative Quantitative Research Qualitative analytics is a very powerful tool for exploratory research – the earliest phase of analytics. It is also a great tool to bridge the gap between insights provided by quantitative research, and provide in-depth understanding of the underlying reasons and motivations for a phenomenon. Pragmatic qualitative research is done through a variety of methods. While some of them are simple such as Surveys and Interviews, others are highly advanced such as Ethnography and Phenomenology.
+<br><br>
+One of the most common myths about qualitative analytics is that it is useful only for academic researchers in selected fields such as social sciences and neuroscience marketing. The truth is that - almost all business problems have a qualitative aspect, and thus, quantitative analysis alone would never be able to tell the complete story.
+<br><br>
+As an example, let’s consider web analytics. All leading web analytics software have excellent quantitative analytics capabilities. They can easily, yet precisely, provide information such as: number of users who visited the website during a given time period, geographic locations from which the website was accessed, time period for which user stayed on the website, etc. However, when it comes to the “true business value” questions (such as why did the customer not make the purchase? what factors influenced the customer’s buying decision? how did the customer feel after the purchase?) these web analytics software, at-best provide vague answers.
+<br><br>
+So, if you are narrowly focused on the clickstream, you will never be able to comprehend the thoughts going through customer’s mind as she moves across the “conversion funnel”. So, when you think of sales, instead of focusing on the “click” event, think broader about the interaction and overall experience. One of the most popular business Key Performance Indicator (KPI), Customer Satisfaction can never be measured through quantitative analytics alone. No amount of quantitative guessing can match the business value of “voice of customer”.
+<br><br>
+As the CMOs increasingly drift from Customer Relationship Management (CRM) to Customer Experience Management (CEM), there is an increasing need for holistic understanding of customer experience across the complete sale cycle. This can be achieved only through deploying qualitative analytics and integrating it with quantitative analytics to provide 360-degree data analysis.
+<br><br>
+Let’s face it. Quantitative analytics still needs more manual intervention and the results are often fuzzy. In absence of a clear-cut approach and thus automation, it is not as time and energy efficient as the traditional quantitative analytics. But, qualitative analytics is still indispensable as it provides deep, actionable insights about the ‘why’ and ‘how’ aspect, which often gets ignored as we continue to be inundated with the ‘what’ ‘where’ and ‘when’ of statistics.
+<br><br>
+With the rapid pace of technology advancement in recent times, it now seems that the software tools used for academic purpose are ready to deliver on the business analytics needs of the industry. MAXQDA, ATLAS.ti and NVivo are some of the best qualitative research tools, with extended capabilities of semi-automating the pattern recognition from content (such as subjective answers, interview transcripts or video recordings).
+<br><br>
+If you are a business manager, it is high time to think again about your analytics dashboard and whether qualitative analytics are getting your appropriate attention. 
+
+<h4> Part - III </h4>
+Sentiment analysis aims to make sense of the Internet of People. That’s what interests me, technologies that take on the thinking, feeling, social network of interconnected individuals. Built into business solutions and cognitive systems that “learn and interact naturally with people to extend what either humans or machine could do on their own” (IBM), these technologies enrich and enhance our personal and business interactions.
+<br><br>
+Contrast with all we’ve been hearing about the Internet of Things. Who isn’t eager for killer apps such as a smart fridge that will tell you when the milk is sour or even get an order in for you? Well, me for one, although I recognize that IOT technologies will make life more efficient. While the situation is not either/or, the mechanics of efficiency, behind the IOT, are simply not as intriguing as the human-understanding challenge posed by the Internet of People.
+<br><br>
+Plutchik wheel of emotionsHuman understanding entails ability to decipher language, measure and decode expressions and movements, model behaviors, and grasp cognitive processes. These “inputs” are complex and ambiguous. Context, culture, and persona (situational profile) are critical elements. These factors make human data tougher to master than the IOT’s machine-data streams.
+<br><br>
+Fortunately, a little bit of sentiment analysis can take you far, in customer experience, market research, financial services, and social/media analysis. The technology has proven itself in these areas, even if most implementations have involved over-simplified positive/negative sentiment scoring. Fortunately also then that we do not lack for sentiment analysis innovation.
+<br><br>
+Three Innovation Categories
+<br><br>
+Let’s look at sentiment analysis innovation in three categories. I’ll provide innovator examples — technologies that work, outside the lab — and describe how each is advancing methods or applications.
+<br><br>
+My perspective is this: I work as an industry analyst and consultant covering business intelligence, text analytics, and sentiment analysis. I talk to a lot of people: Researchers, solution providers, business users, and fellow analysts, and I organize a conference that is unique in its coverage of industry applications of sensemaking technologies, the Sentiment Analysis Symposium, next up March 5-6 in New York. These technologies include text & speech analytics, natural language processing, semantics, etc., and the data acquisition, integration, and visualization components and industry adaptations that turn them into business solutions.
+<br><br>
+In this look at sentiment analysis innovation, let’s examine:
+<br><br>
+    Improvers: Who’s accomplishing mainstream tasks better — more accessibly, more accurately, and at greater scale.
+    Extenders: Who’s accomplishing new tasks — bringing on-line new data sources, extracting fresh insights, answering new use cases.
+    Disruptors: Who’s redefining the problem, via new methods and new solutions.
+<br><br>
+Some of the companies I cite could fit in more than one category, and without question, I’ll miss a few great start-ups. My aim is to provide examples, not an exhaustive or rigidly classified catalog of companies in the space. A final disclaimer: A number of the companies I will cite are sponsoring the symposium or a text-analytics market study I am currently conducting. I’ll list them in a disclosure toward the end of this article.
+<br><br>
+Improvers: More, Better
+<br><br>
+In this category, let’s start with participants in the API economy, analysis providers whose sentiment engines are accessed on-demand, via a Web-service application programming interface. Consider:
+<br><br>
+    Semantria, providing via-API, on-demand access to the Lexalytics Salience engine, Lexalytics’ being the market’s leading pure-play sentiment-analysis provider. Semantria provides SDKs (software development kits) for a variety of programming environments and hooks into applications such as Excel. Net is that Semantria democratizes access to sentiment analysis.
+    ConveyAPI is breaking ground on accuracy and domain adaptation for brand social-media sentiment analysis. ConveyAPI was created by social-media agency Converseon, which recently spun it out into a subsidiary that provides on-demand, via-API access to the Conversation Miner engine. The technology relies on supervised learning from human-annotated social-media training data specific to a variety of industry domains.
+<br><br>
+Platforms are the inverse of services: They provide application and orchestration frameworks that support via-API invocation of external Web and local services. Programming languages popular among data scientists, such as Python, R, Java, and Scala, provide, in a sense, platforms for application-building, but I have in mind something higher-level. Consider instead platforms designed specifically for language-analysis such as:
+<br><br>
+    GATE, the General Architecture for Text Engineering, still innovative after all these years (around 15 since project founding). I base this assessment on developer Diana Maynard’s tweeted comment about my recent Social Sentiment’s Missing Measures article, that a GATE project is dealing with advanced sentiment measures I cited, density, variation, and volatility.
+<br><br>
+GATE is an open-source project with development centered at the University of Sheffield and world-wide community participation. Where there’s a platform, there’s often a community of users, builders, and partners, and — examples such as the Apple App Store and Google Play are old hat — a marketplace that allows community members to distribute and sell their contributions. Notable platform+marketplace examples, supporting sentiment solution building — unusual in the sentiment-analysis world, are:
+<br><br>
+    TEMIS, whose Luxid text-analysis platform is built around the Apache UIMA framework, which allows plug-in of external resources, namely of annotators that perform specialized information extraction and analysis functions. TEMIS characterizes the Luxid Community as “the first community platform for semantics.”
+    QlikView, which you may know as a BI tool for visual, exploratory data analysis, but which similarly boasts an open architecture, exploited by QlikMarket participants. I particularly like the work of QlikTech partner QVSource, which provides an array of connectors to social and online information sources, including for sentiment and text analysis.
+<br><br>
+In the social-analytics world, Radian6 — part of Salesforce Marketing Cloud — pioneered the platform/marketplace approach, but after repeatedly hearing messages like this one I received on February 6, “I am using Radian6 to pull in data, but their sentiment analysis is not useful and I ignore it,” I infer that the company has de-innovated on the sentiment-analysis front.
+<br><br>
+Extenders: New Frontiers
+<br><br>
+I’m particularly interested in ability to extract new types of information from existing and new sources and in new indicators (derived, computed values) that can be used with confidence to guide business decision-making.
+<br><br>
+The sentiment-analysis frontier is moving beyond systems that resolve sentiment at the feature level — sentiment about entities (named individuals, companies, and geographic locations, etc.) and topics — so my examples will focus on, let’s call it, extended subjectivity. Consider:
+<br><br>
+    Datumbox, which aims to identify subjectivity, genre, gender, readability, and other beyond-meaning senses.
+    Social Market Analytics, bringing to Twitter-sourced analyses the sort of technicals beloved by financial-market traders, elements such as volatility and dispersion.
+    Kanjoya, a commercialization of the Experience Project at Stanford University, which analyzes expressions, emotions, and behaviors to further brand business goals.
+<br><br>
+Consider, also, information extraction from non-textual media, from speech, images, and video. Eye movement, facial expressions, speech tone and patterns, and other biometrics indicate mood and emotion. Without description, I’ll cite:
+
+
+
+
+
+
+
+
+
+
+<br><br>
+    Facial recognition and emotion resolution vendors Affectiva, Emotient, Eyeris, and RealEyes.
+    Speech analysis vendors Beyond Verbal and NICE. (Other speech-analytics vendors, such as Nexidia, appear not to extract emotion.)
+<br><br>
+One special bit of coolness is indicated in a TechCrunch article: Affectiva Launches An SDK To Bring Emotion Tracking To Mobile Apps, offering ability to decode emotion in images captured on mobile devices. Others, notably React Labs, created by Philip Resnik, a linguistics professor at the University of Maryland, are working to toward real-time opinion gathering. But mobile sentiment measurement is no more a slam-dunk than any other cutting-edge implementation. Witness the demise of mobile feedback service Swipp despite $9 million in 2012-3 funding.
+<br><br>
+Finally, we have new indicators such as advocacy, engagement, and motivation, more sophisticated and useful than crude, first-generation quantities such as influence:
+<br><br>
+    MotiveQuest calls its business online anthropology, an approach to understanding behaviors in order to promote customer advocacy and engagement. CEO David Rabjohns explains, “When we talk about motivations we use that term as a headline for the way people want to feel at a primal/tribal level (feel successful, feel creative, feel smart, etc.). With our MotiveScape tool we use sophisticated linguistic algorithms to explore and tag the different ways talk about the 12 broad motivational areas.”
+    IBM, similarly, is pursuing new initiatives in engagement analytics, an innovation I’ve chosen to showcase at my up-coming Sentiment Analysis Symposium in the form of a keynote by social-business technology leader Marie Wallace.
+<br><br>
+Disruptors: Killers and Creators
+<br><br>
+I’ll admit in advance that if I had a crystal ball for about-to-appear-out-of-nowhere disruptors, I’d be in a different line of business. But I do acknowledge certain now widely recognized disruption-enabling technologies, namely machine learning, mobile, and cloud.
+<br><br>
+I’ll reserve the mobile topic for another occasion, and I’ve covered cloud in citing a number of sentiment-as-a-Web-service offerings. I’ll add only how impressed I am by the extension of the coverage, capacity, and value of data-as-a-service providers such as DataSift, Gnip, and Xignite, which include sentiment among the varieties of supported tagging. They’re not analytics providers — the move to relocate analytics to the cloud is obvious rather than earth-shaking — rather, the emerging data economy is built around them and others like them.
+<br><br>
+I’ve saved the best for last.
+<br><br>
+We all recognize the benefits that machine learning — in particular, unsupervised methods and deep learning — are bringing to a host of computing problems. The algorithms are newly effective and efficient, required computing hardware is powerful and cheap, and data is abundant and available, so we can now let the machines find their own ways. We can move away from exclusive reliance on rigid and hard-to-maintain rules and supervised learning based on predefined categories (not that those systems aren’t and won’t remain right, best even, for a good many problems), where models apply well only for the language and business domain of the labeled training data.
+<br><br>
+Why unsupervised learning? Eliott Turner, who founded text analysis provider AlchemyAPI in 2005, says “a never-ending challenge to understanding text is staying current with emerging slang and phrases. Unsupervised learning can enable machines to discover new words without human-curated training sets.” (Contrast with semi-supervised learning, applying unsupervised learning to refine models built initially from labeled training data, and with non-learning unsupervised methods such a Latent Semantic Analysis for topic extraction.)
+<br><br>
+Luminoso applies unsupervised learning to populate a “multi-dimensional semantic space” and uses the learned patterns to text-analysis tasks. (Luminoso co-founder and CEO Catherine Havasi is co-author of a paper, New Avenues in Opinion Mining and Sentiment Analysis, that covers approaches to the sentiment challenges.)
+<br><br>
+And deep learning, involving multi-level, hierarchical models? “Deep learning can give us a much richer representation of text than is possible with traditional natural-language processing,… more robust text and vision systems that hold their accuracy when analyzing data far different from what they were trained on,” according to Turner, but requires massive training data sets, technical innovations, and a lot of affordable computing power.
+<br><br>
+No Guarantees
+<br><br>
+Clearly I’m an innovation fan, but like any sensible market watcher, I understand the reality that innovation alone doesn’t ensure success. Frederik Hermann, former VP Global Marketing at Swipp graciously allowed me to quote him on Swipp’s demise: ”Unfortunately Swipp is dead. Corporate buy in to use our APIs and technology took too long and therefore revenues remained flat while the consumer app didn’t provide enough immediate value add unless coupled with a larger corporate partnership for real scale.” Innovation is only one part of a larger market puzzle.
+<br><br>
+Disclosures and entanglements: Gnip, IBM, Lexalytics, and Converseon are four of the ten March Sentiment Analysis Symposium sponsors, and I engaged the guy who helped build Converseon’s Conversation Miner engine, computational linguist Jason Baldridge of the Univ. of Texas, to teach the Practical Sentiment Analysis tutorial at the symposium. Affectiva co-founder Rosalind Picard MIT Media Lab will be keynoting at the symposium, speaking on “Adventures in Emotion Recognition,” and we also have Jacob Whitehill of Emotient and Yuval Mor, CEO of Beyond Verbal, on the agenda. David Rabjohns and Kanjoya’s Moritz Sudhof will also speak at the symposium. Finally, Luminoso, Lexalytics, and AlchemyAPI are three of the eight sponsors of my Text Analytics 2014 market study.
+<br><br>
+Quite often, the focus of analytics efforts is highly skewed towards quantitative aspects and the qualitative efforts are either negligible or replaced by the executives’ “gut feeling”. It is imperative to understand how such a casual approach can hurt your business.
+<br><br>
+The analysis of qualitative data through the methods generally used for qualitative research is referred to as Qualitative Analytics. The differentiation between Qualitative and Quantitative analytics is not always obvious. For example, during Text Analytics, measuring the frequency of certain words would be considered Quantitative Analytics; whereas exploring the contextual meaning of popular words would be considered Qualitative Analytics. In other words, Qualitative Analytics includes the analysis of context, human behavior, emotions and other factors that are hard to digitize without losing any meaning.
+<br><br>
+Qualitative Quantitative Research Qualitative analytics is a very powerful tool for exploratory research – the earliest phase of analytics. It is also a great tool to bridge the gap between insights provided by quantitative research, and provide in-depth understanding of the underlying reasons and motivations for a phenomenon. Pragmatic qualitative research is done through a variety of methods. While some of them are simple such as Surveys and Interviews, others are highly advanced such as Ethnography and Phenomenology.
+<br><br>
+One of the most common myths about qualitative analytics is that it is useful only for academic researchers in selected fields such as social sciences and neuroscience marketing. The truth is that - almost all business problems have a qualitative aspect, and thus, quantitative analysis alone would never be able to tell the complete story.
+<br><br>
+As an example, let’s consider web analytics. All leading web analytics software have excellent quantitative analytics capabilities. They can easily, yet precisely, provide information such as: number of users who visited the website during a given time period, geographic locations from which the website was accessed, time period for which user stayed on the website, etc. However, when it comes to the “true business value” questions (such as why did the customer not make the purchase? what factors influenced the customer’s buying decision? how did the customer feel after the purchase?) these web analytics software, at-best provide vague answers.
+<br><br>
+So, if you are narrowly focused on the clickstream, you will never be able to comprehend the thoughts going through customer’s mind as she moves across the “conversion funnel”. So, when you think of sales, instead of focusing on the “click” event, think broader about the interaction and overall experience. One of the most popular business Key Performance Indicator (KPI), Customer Satisfaction can never be measured through quantitative analytics alone. No amount of quantitative guessing can match the business value of “voice of customer”.
+<br><br>
+As the CMOs increasingly drift from Customer Relationship Management (CRM) to Customer Experience Management (CEM), there is an increasing need for holistic understanding of customer experience across the complete sale cycle. This can be achieved only through deploying qualitative analytics and integrating it with quantitative analytics to provide 360-degree data analysis.
+<br><br>
+Let’s face it. Quantitative analytics still needs more manual intervention and the results are often fuzzy. In absence of a clear-cut approach and thus automation, it is not as time and energy efficient as the traditional quantitative analytics. But, qualitative analytics is still indispensable as it provides deep, actionable insights about the ‘why’ and ‘how’ aspect, which often gets ignored as we continue to be inundated with the ‘what’ ‘where’ and ‘when’ of statistics.
+<br><br>
+With the rapid pace of technology advancement in recent times, it now seems that the software tools used for academic purpose are ready to deliver on the business analytics needs of the industry. MAXQDA, ATLAS.ti and NVivo are some of the best qualitative research tools, with extended capabilities of semi-automating the pattern recognition from content (such as subjective answers, interview transcripts or video recordings).
+<br><br>
+If you are a business manager, it is high time to think again about your analytics dashboard and whether qualitative analytics are getting your appropriate attention. 
+
+<h4> Part - IV </h4>
+Sentiment analysis aims to make sense of the Internet of People. That’s what interests me, technologies that take on the thinking, feeling, social network of interconnected individuals. Built into business solutions and cognitive systems that “learn and interact naturally with people to extend what either humans or machine could do on their own” (IBM), these technologies enrich and enhance our personal and business interactions.
+<br><br>
+Contrast with all we’ve been hearing about the Internet of Things. Who isn’t eager for killer apps such as a smart fridge that will tell you when the milk is sour or even get an order in for you? Well, me for one, although I recognize that IOT technologies will make life more efficient. While the situation is not either/or, the mechanics of efficiency, behind the IOT, are simply not as intriguing as the human-understanding challenge posed by the Internet of People.
+<br><br>
+Plutchik wheel of emotionsHuman understanding entails ability to decipher language, measure and decode expressions and movements, model behaviors, and grasp cognitive processes. These “inputs” are complex and ambiguous. Context, culture, and persona (situational profile) are critical elements. These factors make human data tougher to master than the IOT’s machine-data streams.
+<br><br>
+Fortunately, a little bit of sentiment analysis can take you far, in customer experience, market research, financial services, and social/media analysis. The technology has proven itself in these areas, even if most implementations have involved over-simplified positive/negative sentiment scoring. Fortunately also then that we do not lack for sentiment analysis innovation.
+<br><br>
+Three Innovation Categories
+<br><br>
+Let’s look at sentiment analysis innovation in three categories. I’ll provide innovator examples — technologies that work, outside the lab — and describe how each is advancing methods or applications.
+<br><br>
+My perspective is this: I work as an industry analyst and consultant covering business intelligence, text analytics, and sentiment analysis. I talk to a lot of people: Researchers, solution providers, business users, and fellow analysts, and I organize a conference that is unique in its coverage of industry applications of sensemaking technologies, the Sentiment Analysis Symposium, next up March 5-6 in New York. These technologies include text & speech analytics, natural language processing, semantics, etc., and the data acquisition, integration, and visualization components and industry adaptations that turn them into business solutions.
+<br><br>
+In this look at sentiment analysis innovation, let’s examine:
+<br><br>
+    Improvers: Who’s accomplishing mainstream tasks better — more accessibly, more accurately, and at greater scale.
+    Extenders: Who’s accomplishing new tasks — bringing on-line new data sources, extracting fresh insights, answering new use cases.
+    Disruptors: Who’s redefining the problem, via new methods and new solutions.
+<br><br>
+Some of the companies I cite could fit in more than one category, and without question, I’ll miss a few great start-ups. My aim is to provide examples, not an exhaustive or rigidly classified catalog of companies in the space. A final disclaimer: A number of the companies I will cite are sponsoring the symposium or a text-analytics market study I am currently conducting. I’ll list them in a disclosure toward the end of this article.
+<br><br>
+Improvers: More, Better
+<br><br>
+In this category, let’s start with participants in the API economy, analysis providers whose sentiment engines are accessed on-demand, via a Web-service application programming interface. Consider:
+<br><br>
+    Semantria, providing via-API, on-demand access to the Lexalytics Salience engine, Lexalytics’ being the market’s leading pure-play sentiment-analysis provider. Semantria provides SDKs (software development kits) for a variety of programming environments and hooks into applications such as Excel. Net is that Semantria democratizes access to sentiment analysis.
+    ConveyAPI is breaking ground on accuracy and domain adaptation for brand social-media sentiment analysis. ConveyAPI was created by social-media agency Converseon, which recently spun it out into a subsidiary that provides on-demand, via-API access to the Conversation Miner engine. The technology relies on supervised learning from human-annotated social-media training data specific to a variety of industry domains.
+<br><br>
+Platforms are the inverse of services: They provide application and orchestration frameworks that support via-API invocation of external Web and local services. Programming languages popular among data scientists, such as Python, R, Java, and Scala, provide, in a sense, platforms for application-building, but I have in mind something higher-level. Consider instead platforms designed specifically for language-analysis such as:
+<br><br>
+    GATE, the General Architecture for Text Engineering, still innovative after all these years (around 15 since project founding). I base this assessment on developer Diana Maynard’s tweeted comment about my recent Social Sentiment’s Missing Measures article, that a GATE project is dealing with advanced sentiment measures I cited, density, variation, and volatility.
+<br><br>
+GATE is an open-source project with development centered at the University of Sheffield and world-wide community participation. Where there’s a platform, there’s often a community of users, builders, and partners, and — examples such as the Apple App Store and Google Play are old hat — a marketplace that allows community members to distribute and sell their contributions. Notable platform+marketplace examples, supporting sentiment solution building — unusual in the sentiment-analysis world, are:
+<br><br>
+    TEMIS, whose Luxid text-analysis platform is built around the Apache UIMA framework, which allows plug-in of external resources, namely of annotators that perform specialized information extraction and analysis functions. TEMIS characterizes the Luxid Community as “the first community platform for semantics.”
+    QlikView, which you may know as a BI tool for visual, exploratory data analysis, but which similarly boasts an open architecture, exploited by QlikMarket participants. I particularly like the work of QlikTech partner QVSource, which provides an array of connectors to social and online information sources, including for sentiment and text analysis.
+<br><br>
+In the social-analytics world, Radian6 — part of Salesforce Marketing Cloud — pioneered the platform/marketplace approach, but after repeatedly hearing messages like this one I received on February 6, “I am using Radian6 to pull in data, but their sentiment analysis is not useful and I ignore it,” I infer that the company has de-innovated on the sentiment-analysis front.
+<br><br>
+Extenders: New Frontiers
+<br><br>
+I’m particularly interested in ability to extract new types of information from existing and new sources and in new indicators (derived, computed values) that can be used with confidence to guide business decision-making.
+<br><br>
+The sentiment-analysis frontier is moving beyond systems that resolve sentiment at the feature level — sentiment about entities (named individuals, companies, and geographic locations, etc.) and topics — so my examples will focus on, let’s call it, extended subjectivity. Consider:
+<br><br>
+    Datumbox, which aims to identify subjectivity, genre, gender, readability, and other beyond-meaning senses.
+    Social Market Analytics, bringing to Twitter-sourced analyses the sort of technicals beloved by financial-market traders, elements such as volatility and dispersion.
+    Kanjoya, a commercialization of the Experience Project at Stanford University, which analyzes expressions, emotions, and behaviors to further brand business goals.
+<br><br>
+Consider, also, information extraction from non-textual media, from speech, images, and video. Eye movement, facial expressions, speech tone and patterns, and other biometrics indicate mood and emotion. Without description, I’ll cite:
+<br><br>
+    Facial recognition and emotion resolution vendors Affectiva, Emotient, Eyeris, and RealEyes.
+    Speech analysis vendors Beyond Verbal and NICE. (Other speech-analytics vendors, such as Nexidia, appear not to extract emotion.)
+<br><br>
+One special bit of coolness is indicated in a TechCrunch article: Affectiva Launches An SDK To Bring Emotion Tracking To Mobile Apps, offering ability to decode emotion in images captured on mobile devices. Others, notably React Labs, created by Philip Resnik, a linguistics professor at the University of Maryland, are working to toward real-time opinion gathering. But mobile sentiment measurement is no more a slam-dunk than any other cutting-edge implementation. Witness the demise of mobile feedback service Swipp despite $9 million in 2012-3 funding.
+<br><br>
+Finally, we have new indicators such as advocacy, engagement, and motivation, more sophisticated and useful than crude, first-generation quantities such as influence:
+<br><br>
+    MotiveQuest calls its business online anthropology, an approach to understanding behaviors in order to promote customer advocacy and engagement. CEO David Rabjohns explains, “When we talk about motivations we use that term as a headline for the way people want to feel at a primal/tribal level (feel successful, feel creative, feel smart, etc.). With our MotiveScape tool we use sophisticated linguistic algorithms to explore and tag the different ways talk about the 12 broad motivational areas.”
+    IBM, similarly, is pursuing new initiatives in engagement analytics, an innovation I’ve chosen to showcase at my up-coming Sentiment Analysis Symposium in the form of a keynote by social-business technology leader Marie Wallace.
+<br><br>
+Disruptors: Killers and Creators
+<br><br>
+I’ll admit in advance that if I had a crystal ball for about-to-appear-out-of-nowhere disruptors, I’d be in a different line of business. But I do acknowledge certain now widely recognized disruption-enabling technologies, namely machine learning, mobile, and cloud.
+<br><br>
+I’ll reserve the mobile topic for another occasion, and I’ve covered cloud in citing a number of sentiment-as-a-Web-service offerings. I’ll add only how impressed I am by the extension of the coverage, capacity, and value of data-as-a-service providers such as DataSift, Gnip, and Xignite, which include sentiment among the varieties of supported tagging. They’re not analytics providers — the move to relocate analytics to the cloud is obvious rather than earth-shaking — rather, the emerging data economy is built around them and others like them.
+<br><br>
+I’ve saved the best for last.
+<br><br>
+We all recognize the benefits that machine learning — in particular, unsupervised methods and deep learning — are bringing to a host of computing problems. The algorithms are newly effective and efficient, required computing hardware is powerful and cheap, and data is abundant and available, so we can now let the machines find their own ways. We can move away from exclusive reliance on rigid and hard-to-maintain rules and supervised learning based on predefined categories (not that those systems aren’t and won’t remain right, best even, for a good many problems), where models apply well only for the language and business domain of the labeled training data.
+<br><br>
+Why unsupervised learning? Eliott Turner, who founded text analysis provider AlchemyAPI in 2005, says “a never-ending challenge to understanding text is staying current with emerging slang and phrases. Unsupervised learning can enable machines to discover new words without human-curated training sets.” (Contrast with semi-supervised learning, applying unsupervised learning to refine models built initially from labeled training data, and with non-learning unsupervised methods such a Latent Semantic Analysis for topic extraction.)
+<br><br>
+Luminoso applies unsupervised learning to populate a “multi-dimensional semantic space” and uses the learned patterns to text-analysis tasks. (Luminoso co-founder and CEO Catherine Havasi is co-author of a paper, New Avenues in Opinion Mining and Sentiment Analysis, that covers approaches to the sentiment challenges.)
+<br><br>
+And deep learning, involving multi-level, hierarchical models? “Deep learning can give us a much richer representation of text than is possible with traditional natural-language processing,… more robust text and vision systems that hold their accuracy when analyzing data far different from what they were trained on,” according to Turner, but requires massive training data sets, technical innovations, and a lot of affordable computing power.
+<br><br>
+No Guarantees
+<br><br>
+Clearly I’m an innovation fan, but like any sensible market watcher, I understand the reality that innovation alone doesn’t ensure success. Frederik Hermann, former VP Global Marketing at Swipp graciously allowed me to quote him on Swipp’s demise: ”Unfortunately Swipp is dead. Corporate buy in to use our APIs and technology took too long and therefore revenues remained flat while the consumer app didn’t provide enough immediate value add unless coupled with a larger corporate partnership for real scale.” Innovation is only one part of a larger market puzzle.
+<br><br>
+Disclosures and entanglements: Gnip, IBM, Lexalytics, and Converseon are four of the ten March Sentiment Analysis Symposium sponsors, and I engaged the guy who helped build Converseon’s Conversation Miner engine, computational linguist Jason Baldridge of the Univ. of Texas, to teach the Practical Sentiment Analysis tutorial at the symposium. Affectiva co-founder Rosalind Picard MIT Media Lab will be keynoting at the symposium, speaking on “Adventures in Emotion Recognition,” and we also have Jacob Whitehill of Emotient and Yuval Mor, CEO of Beyond Verbal, on the agenda. David Rabjohns and Kanjoya’s Moritz Sudhof will also speak at the symposium. Finally, Luminoso, Lexalytics, and AlchemyAPI are three of the eight sponsors of my Text Analytics 2014 market study.
+<br><br>
+Quite often, the focus of analytics efforts is highly skewed towards quantitative aspects and the qualitative efforts are either negligible or replaced by the executives’ “gut feeling”. It is imperative to understand how such a casual approach can hurt your business.
+<br><br>
+The analysis of qualitative data through the methods generally used for qualitative research is referred to as Qualitative Analytics. The differentiation between Qualitative and Quantitative analytics is not always obvious. For example, during Text Analytics, measuring the frequency of certain words would be considered Quantitative Analytics; whereas exploring the contextual meaning of popular words would be considered Qualitative Analytics. In other words, Qualitative Analytics includes the analysis of context, human behavior, emotions and other factors that are hard to digitize without losing any meaning.
+<br><br>
+Qualitative Quantitative Research Qualitative analytics is a very powerful tool for exploratory research – the earliest phase of analytics. It is also a great tool to bridge the gap between insights provided by quantitative research, and provide in-depth understanding of the underlying reasons and motivations for a phenomenon. Pragmatic qualitative research is done through a variety of methods. While some of them are simple such as Surveys and Interviews, others are highly advanced such as Ethnography and Phenomenology.
+<br><br>
+One of the most common myths about qualitative analytics is that it is useful only for academic researchers in selected fields such as social sciences and neuroscience marketing. The truth is that - almost all business problems have a qualitative aspect, and thus, quantitative analysis alone would never be able to tell the complete story.
+<br><br>
+As an example, let’s consider web analytics. All leading web analytics software have excellent quantitative analytics capabilities. They can easily, yet precisely, provide information such as: number of users who visited the website during a given time period, geographic locations from which the website was accessed, time period for which user stayed on the website, etc. However, when it comes to the “true business value” questions (such as why did the customer not make the purchase? what factors influenced the customer’s buying decision? how did the customer feel after the purchase?) these web analytics software, at-best provide vague answers.
+<br><br>
+So, if you are narrowly focused on the clickstream, you will never be able to comprehend the thoughts going through customer’s mind as she moves across the “conversion funnel”. So, when you think of sales, instead of focusing on the “click” event, think broader about the interaction and overall experience. One of the most popular business Key Performance Indicator (KPI), Customer Satisfaction can never be measured through quantitative analytics alone. No amount of quantitative guessing can match the business value of “voice of customer”.
+<br><br>
+As the CMOs increasingly drift from Customer Relationship Management (CRM) to Customer Experience Management (CEM), there is an increasing need for holistic understanding of customer experience across the complete sale cycle. This can be achieved only through deploying qualitative analytics and integrating it with quantitative analytics to provide 360-degree data analysis.
+<br><br>
+Let’s face it. Quantitative analytics still needs more manual intervention and the results are often fuzzy. In absence of a clear-cut approach and thus automation, it is not as time and energy efficient as the traditional quantitative analytics. But, qualitative analytics is still indispensable as it provides deep, actionable insights about the ‘why’ and ‘how’ aspect, which often gets ignored as we continue to be inundated with the ‘what’ ‘where’ and ‘when’ of statistics.
+<br><br>
+With the rapid pace of technology advancement in recent times, it now seems that the software tools used for academic purpose are ready to deliver on the business analytics needs of the industry. MAXQDA, ATLAS.ti and NVivo are some of the best qualitative research tools, with extended capabilities of semi-automating the pattern recognition from content (such as subjective answers, interview transcripts or video recordings).
+<br><br>
+If you are a business manager, it is high time to think again about your analytics dashboard and whether qualitative analytics are getting your appropriate attention. 
+
+<h4> Part - V </h4>
+Sentiment analysis aims to make sense of the Internet of People. That’s what interests me, technologies that take on the thinking, feeling, social network of interconnected individuals. Built into business solutions and cognitive systems that “learn and interact naturally with people to extend what either humans or machine could do on their own” (IBM), these technologies enrich and enhance our personal and business interactions.
+<br><br>
+Contrast with all we’ve been hearing about the Internet of Things. Who isn’t eager for killer apps such as a smart fridge that will tell you when the milk is sour or even get an order in for you? Well, me for one, although I recognize that IOT technologies will make life more efficient. While the situation is not either/or, the mechanics of efficiency, behind the IOT, are simply not as intriguing as the human-understanding challenge posed by the Internet of People.
+<br><br>
+Plutchik wheel of emotionsHuman understanding entails ability to decipher language, measure and decode expressions and movements, model behaviors, and grasp cognitive processes. These “inputs” are complex and ambiguous. Context, culture, and persona (situational profile) are critical elements. These factors make human data tougher to master than the IOT’s machine-data streams.
+<br><br>
+Fortunately, a little bit of sentiment analysis can take you far, in customer experience, market research, financial services, and social/media analysis. The technology has proven itself in these areas, even if most implementations have involved over-simplified positive/negative sentiment scoring. Fortunately also then that we do not lack for sentiment analysis innovation.
+<br><br>
+Three Innovation Categories
+<br><br>
+Let’s look at sentiment analysis innovation in three categories. I’ll provide innovator examples — technologies that work, outside the lab — and describe how each is advancing methods or applications.
+<br><br>
+My perspective is this: I work as an industry analyst and consultant covering business intelligence, text analytics, and sentiment analysis. I talk to a lot of people: Researchers, solution providers, business users, and fellow analysts, and I organize a conference that is unique in its coverage of industry applications of sensemaking technologies, the Sentiment Analysis Symposium, next up March 5-6 in New York. These technologies include text & speech analytics, natural language processing, semantics, etc., and the data acquisition, integration, and visualization components and industry adaptations that turn them into business solutions.
+<br><br>
+In this look at sentiment analysis innovation, let’s examine:
+<br><br>
+    Improvers: Who’s accomplishing mainstream tasks better — more accessibly, more accurately, and at greater scale.
+    Extenders: Who’s accomplishing new tasks — bringing on-line new data sources, extracting fresh insights, answering new use cases.
+    Disruptors: Who’s redefining the problem, via new methods and new solutions.
+<br><br>
+Some of the companies I cite could fit in more than one category, and without question, I’ll miss a few great start-ups. My aim is to provide examples, not an exhaustive or rigidly classified catalog of companies in the space. A final disclaimer: A number of the companies I will cite are sponsoring the symposium or a text-analytics market study I am currently conducting. I’ll list them in a disclosure toward the end of this article.
+<br><br>
+Improvers: More, Better
+<br><br>
+In this category, let’s start with participants in the API economy, analysis providers whose sentiment engines are accessed on-demand, via a Web-service application programming interface. Consider:
+<br><br>
+    Semantria, providing via-API, on-demand access to the Lexalytics Salience engine, Lexalytics’ being the market’s leading pure-play sentiment-analysis provider. Semantria provides SDKs (software development kits) for a variety of programming environments and hooks into applications such as Excel. Net is that Semantria democratizes access to sentiment analysis.
+    ConveyAPI is breaking ground on accuracy and domain adaptation for brand social-media sentiment analysis. ConveyAPI was created by social-media agency Converseon, which recently spun it out into a subsidiary that provides on-demand, via-API access to the Conversation Miner engine. The technology relies on supervised learning from human-annotated social-media training data specific to a variety of industry domains.
+<br><br>
+Platforms are the inverse of services: They provide application and orchestration frameworks that support via-API invocation of external Web and local services. Programming languages popular among data scientists, such as Python, R, Java, and Scala, provide, in a sense, platforms for application-building, but I have in mind something higher-level. Consider instead platforms designed specifically for language-analysis such as:
+<br><br>
+    GATE, the General Architecture for Text Engineering, still innovative after all these years (around 15 since project founding). I base this assessment on developer Diana Maynard’s tweeted comment about my recent Social Sentiment’s Missing Measures article, that a GATE project is dealing with advanced sentiment measures I cited, density, variation, and volatility.
+<br><br>
+GATE is an open-source project with development centered at the University of Sheffield and world-wide community participation. Where there’s a platform, there’s often a community of users, builders, and partners, and — examples such as the Apple App Store and Google Play are old hat — a marketplace that allows community members to distribute and sell their contributions. Notable platform+marketplace examples, supporting sentiment solution building — unusual in the sentiment-analysis world, are:
+<br><br>
+    TEMIS, whose Luxid text-analysis platform is built around the Apache UIMA framework, which allows plug-in of external resources, namely of annotators that perform specialized information extraction and analysis functions. TEMIS characterizes the Luxid Community as “the first community platform for semantics.”
+    QlikView, which you may know as a BI tool for visual, exploratory data analysis, but which similarly boasts an open architecture, exploited by QlikMarket participants. I particularly like the work of QlikTech partner QVSource, which provides an array of connectors to social and online information sources, including for sentiment and text analysis.
+<br><br>
+In the social-analytics world, Radian6 — part of Salesforce Marketing Cloud — pioneered the platform/marketplace approach, but after repeatedly hearing messages like this one I received on February 6, “I am using Radian6 to pull in data, but their sentiment analysis is not useful and I ignore it,” I infer that the company has de-innovated on the sentiment-analysis front.
+<br><br>
+Extenders: New Frontiers
+<br><br>
+I’m particularly interested in ability to extract new types of information from existing and new sources and in new indicators (derived, computed values) that can be used with confidence to guide business decision-making.
+<br><br>
+The sentiment-analysis frontier is moving beyond systems that resolve sentiment at the feature level — sentiment about entities (named individuals, companies, and geographic locations, etc.) and topics — so my examples will focus on, let’s call it, extended subjectivity. Consider:
+<br><br>
+    Datumbox, which aims to identify subjectivity, genre, gender, readability, and other beyond-meaning senses.
+    Social Market Analytics, bringing to Twitter-sourced analyses the sort of technicals beloved by financial-market traders, elements such as volatility and dispersion.
+    Kanjoya, a commercialization of the Experience Project at Stanford University, which analyzes expressions, emotions, and behaviors to further brand business goals.
+<br><br>
+Consider, also, information extraction from non-textual media, from speech, images, and video. Eye movement, facial expressions, speech tone and patterns, and other biometrics indicate mood and emotion. Without description, I’ll cite:
+<br><br>
+    Facial recognition and emotion resolution vendors Affectiva, Emotient, Eyeris, and RealEyes.
+    Speech analysis vendors Beyond Verbal and NICE. (Other speech-analytics vendors, such as Nexidia, appear not to extract emotion.)
+<br><br>
+One special bit of coolness is indicated in a TechCrunch article: Affectiva Launches An SDK To Bring Emotion Tracking To Mobile Apps, offering ability to decode emotion in images captured on mobile devices. Others, notably React Labs, created by Philip Resnik, a linguistics professor at the University of Maryland, are working to toward real-time opinion gathering. But mobile sentiment measurement is no more a slam-dunk than any other cutting-edge implementation. Witness the demise of mobile feedback service Swipp despite $9 million in 2012-3 funding.
+<br><br>
+Finally, we have new indicators such as advocacy, engagement, and motivation, more sophisticated and useful than crude, first-generation quantities such as influence:
+<br><br>
+    MotiveQuest calls its business online anthropology, an approach to understanding behaviors in order to promote customer advocacy and engagement. CEO David Rabjohns explains, “When we talk about motivations we use that term as a headline for the way people want to feel at a primal/tribal level (feel successful, feel creative, feel smart, etc.). With our MotiveScape tool we use sophisticated linguistic algorithms to explore and tag the different ways talk about the 12 broad motivational areas.”
+    IBM, similarly, is pursuing new initiatives in engagement analytics, an innovation I’ve chosen to showcase at my up-coming Sentiment Analysis Symposium in the form of a keynote by social-business technology leader Marie Wallace.
+<br><br>
+Disruptors: Killers and Creators
+<br><br>
+I’ll admit in advance that if I had a crystal ball for about-to-appear-out-of-nowhere disruptors, I’d be in a different line of business. But I do acknowledge certain now widely recognized disruption-enabling technologies, namely machine learning, mobile, and cloud.
+<br><br>
+I’ll reserve the mobile topic for another occasion, and I’ve covered cloud in citing a number of sentiment-as-a-Web-service offerings. I’ll add only how impressed I am by the extension of the coverage, capacity, and value of data-as-a-service providers such as DataSift, Gnip, and Xignite, which include sentiment among the varieties of supported tagging. They’re not analytics providers — the move to relocate analytics to the cloud is obvious rather than earth-shaking — rather, the emerging data economy is built around them and others like them.
+<br><br>
+I’ve saved the best for last.
+<br><br>
+We all recognize the benefits that machine learning — in particular, unsupervised methods and deep learning — are bringing to a host of computing problems. The algorithms are newly effective and efficient, required computing hardware is powerful and cheap, and data is abundant and available, so we can now let the machines find their own ways. We can move away from exclusive reliance on rigid and hard-to-maintain rules and supervised learning based on predefined categories (not that those systems aren’t and won’t remain right, best even, for a good many problems), where models apply well only for the language and business domain of the labeled training data.
+<br><br>
+Why unsupervised learning? Eliott Turner, who founded text analysis provider AlchemyAPI in 2005, says “a never-ending challenge to understanding text is staying current with emerging slang and phrases. Unsupervised learning can enable machines to discover new words without human-curated training sets.” (Contrast with semi-supervised learning, applying unsupervised learning to refine models built initially from labeled training data, and with non-learning unsupervised methods such a Latent Semantic Analysis for topic extraction.)
+<br><br>
+Luminoso applies unsupervised learning to populate a “multi-dimensional semantic space” and uses the learned patterns to text-analysis tasks. (Luminoso co-founder and CEO Catherine Havasi is co-author of a paper, New Avenues in Opinion Mining and Sentiment Analysis, that covers approaches to the sentiment challenges.)
+<br><br>
+And deep learning, involving multi-level, hierarchical models? “Deep learning can give us a much richer representation of text than is possible with traditional natural-language processing,… more robust text and vision systems that hold their accuracy when analyzing data far different from what they were trained on,” according to Turner, but requires massive training data sets, technical innovations, and a lot of affordable computing power.
+<br><br>
+No Guarantees
+<br><br>
+Clearly I’m an innovation fan, but like any sensible market watcher, I understand the reality that innovation alone doesn’t ensure success. Frederik Hermann, former VP Global Marketing at Swipp graciously allowed me to quote him on Swipp’s demise: ”Unfortunately Swipp is dead. Corporate buy in to use our APIs and technology took too long and therefore revenues remained flat while the consumer app didn’t provide enough immediate value add unless coupled with a larger corporate partnership for real scale.” Innovation is only one part of a larger market puzzle.
+<br><br>
+Disclosures and entanglements: Gnip, IBM, Lexalytics, and Converseon are four of the ten March Sentiment Analysis Symposium sponsors, and I engaged the guy who helped build Converseon’s Conversation Miner engine, computational linguist Jason Baldridge of the Univ. of Texas, to teach the Practical Sentiment Analysis tutorial at the symposium. Affectiva co-founder Rosalind Picard MIT Media Lab will be keynoting at the symposium, speaking on “Adventures in Emotion Recognition,” and we also have Jacob Whitehill of Emotient and Yuval Mor, CEO of Beyond Verbal, on the agenda. David Rabjohns and Kanjoya’s Moritz Sudhof will also speak at the symposium. Finally, Luminoso, Lexalytics, and AlchemyAPI are three of the eight sponsors of my Text Analytics 2014 market study.
+<br><br>
+Quite often, the focus of analytics efforts is highly skewed towards quantitative aspects and the qualitative efforts are either negligible or replaced by the executives’ “gut feeling”. It is imperative to understand how such a casual approach can hurt your business.
+<br><br>
+The analysis of qualitative data through the methods generally used for qualitative research is referred to as Qualitative Analytics. The differentiation between Qualitative and Quantitative analytics is not always obvious. For example, during Text Analytics, measuring the frequency of certain words would be considered Quantitative Analytics; whereas exploring the contextual meaning of popular words would be considered Qualitative Analytics. In other words, Qualitative Analytics includes the analysis of context, human behavior, emotions and other factors that are hard to digitize without losing any meaning.
+<br><br>
+Qualitative Quantitative Research Qualitative analytics is a very powerful tool for exploratory research – the earliest phase of analytics. It is also a great tool to bridge the gap between insights provided by quantitative research, and provide in-depth understanding of the underlying reasons and motivations for a phenomenon. Pragmatic qualitative research is done through a variety of methods. While some of them are simple such as Surveys and Interviews, others are highly advanced such as Ethnography and Phenomenology.
+<br><br>
+One of the most common myths about qualitative analytics is that it is useful only for academic researchers in selected fields such as social sciences and neuroscience marketing. The truth is that - almost all business problems have a qualitative aspect, and thus, quantitative analysis alone would never be able to tell the complete story.
+<br><br>
+As an example, let’s consider web analytics. All leading web analytics software have excellent quantitative analytics capabilities. They can easily, yet precisely, provide information such as: number of users who visited the website during a given time period, geographic locations from which the website was accessed, time period for which user stayed on the website, etc. However, when it comes to the “true business value” questions (such as why did the customer not make the purchase? what factors influenced the customer’s buying decision? how did the customer feel after the purchase?) these web analytics software, at-best provide vague answers.
+<br><br>
+So, if you are narrowly focused on the clickstream, you will never be able to comprehend the thoughts going through customer’s mind as she moves across the “conversion funnel”. So, when you think of sales, instead of focusing on the “click” event, think broader about the interaction and overall experience. One of the most popular business Key Performance Indicator (KPI), Customer Satisfaction can never be measured through quantitative analytics alone. No amount of quantitative guessing can match the business value of “voice of customer”.
+<br><br>
+As the CMOs increasingly drift from Customer Relationship Management (CRM) to Customer Experience Management (CEM), there is an increasing need for holistic understanding of customer experience across the complete sale cycle. This can be achieved only through deploying qualitative analytics and integrating it with quantitative analytics to provide 360-degree data analysis.
+<br><br>
+Let’s face it. Quantitative analytics still needs more manual intervention and the results are often fuzzy. In absence of a clear-cut approach and thus automation, it is not as time and energy efficient as the traditional quantitative analytics. But, qualitative analytics is still indispensable as it provides deep, actionable insights about the ‘why’ and ‘how’ aspect, which often gets ignored as we continue to be inundated with the ‘what’ ‘where’ and ‘when’ of statistics.
+<br><br>
+With the rapid pace of technology advancement in recent times, it now seems that the software tools used for academic purpose are ready to deliver on the business analytics needs of the industry. MAXQDA, ATLAS.ti and NVivo are some of the best qualitative research tools, with extended capabilities of semi-automating the pattern recognition from content (such as subjective answers, interview transcripts or video recordings).
+<br><br>
+If you are a business manager, it is high time to think again about your analytics dashboard and whether qualitative analytics are getting your appropriate attention. 
+
+<h4> End </h4>
+</p>
+</body>
+
+</html>
