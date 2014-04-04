@@ -2,9 +2,9 @@ NDN WebServer
 
 Pre-requisites:
 
-Node.js
-ndnd-tlv
-ndn-protocol add-on
+Node.js, 
+ndnd-tlv, 
+ndn-protocol firefox add-on
 
 Steps:
 
